@@ -1,0 +1,105 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class WallpaperChanger
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WallpaperChanger))
+        Me.Wallpaper = New System.Windows.Forms.Label()
+        Me.TextBoxLocation = New System.Windows.Forms.TextBox()
+        Me.btnApply = New System.Windows.Forms.Button()
+        Me.btnbrowse = New System.Windows.Forms.Button()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.SuspendLayout()
+        '
+        'Wallpaper
+        '
+        Me.Wallpaper.AutoSize = True
+        Me.Wallpaper.BackColor = System.Drawing.Color.Transparent
+        Me.Wallpaper.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Wallpaper.ForeColor = System.Drawing.Color.Teal
+        Me.Wallpaper.Location = New System.Drawing.Point(12, 9)
+        Me.Wallpaper.Name = "Wallpaper"
+        Me.Wallpaper.Size = New System.Drawing.Size(101, 16)
+        Me.Wallpaper.TabIndex = 30
+        Me.Wallpaper.Text = "Wallpaper Changer"
+        '
+        'TextBoxLocation
+        '
+        Me.TextBoxLocation.Location = New System.Drawing.Point(15, 28)
+        Me.TextBoxLocation.Name = "TextBoxLocation"
+        Me.TextBoxLocation.Size = New System.Drawing.Size(182, 20)
+        Me.TextBoxLocation.TabIndex = 29
+        Me.ToolTip1.SetToolTip(Me.TextBoxLocation, "Wallpaper Path")
+        '
+        'btnApply
+        '
+        Me.btnApply.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnApply.Location = New System.Drawing.Point(109, 54)
+        Me.btnApply.Name = "btnApply"
+        Me.btnApply.Size = New System.Drawing.Size(88, 23)
+        Me.btnApply.TabIndex = 32
+        Me.btnApply.Text = "Apply"
+        Me.ToolTip1.SetToolTip(Me.btnApply, "Try To Apply The Wallpaper")
+        Me.btnApply.UseVisualStyleBackColor = False
+        '
+        'btnbrowse
+        '
+        Me.btnbrowse.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnbrowse.Location = New System.Drawing.Point(15, 54)
+        Me.btnbrowse.Name = "btnbrowse"
+        Me.btnbrowse.Size = New System.Drawing.Size(88, 23)
+        Me.btnbrowse.TabIndex = 31
+        Me.btnbrowse.Text = "Browse"
+        Me.ToolTip1.SetToolTip(Me.btnbrowse, "Browse The Wallpaper Path")
+        Me.btnbrowse.UseVisualStyleBackColor = False
+        '
+        'WallpaperChanger
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.WallpaperChanger
+        Me.ClientSize = New System.Drawing.Size(209, 89)
+        Me.Controls.Add(Me.Wallpaper)
+        Me.Controls.Add(Me.TextBoxLocation)
+        Me.Controls.Add(Me.btnApply)
+        Me.Controls.Add(Me.btnbrowse)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "WallpaperChanger"
+        Me.Text = "Wallpaper Changer"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents Wallpaper As Label
+    Friend WithEvents TextBoxLocation As TextBox
+    Friend WithEvents btnApply As Button
+    Friend WithEvents btnbrowse As Button
+    Friend WithEvents ToolTip1 As ToolTip
+End Class
