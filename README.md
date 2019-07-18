@@ -7,7 +7,7 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7 in mind, but mostl
 ## Source code
 - This project is completely open source and it will be kept like it in the future
 - The source code can be found [here](https://github.com/BastianOliverSchwickert/MNSPlusTrasher) on GitHub
-## Curret features:
+## Current features:
 - Delete /MNS+/ Tempfiles
 - Show [WebLogs](http://mnsplusproxy/) (Permissions required)
 - Open MNS+ v2 Module
@@ -34,5 +34,6 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7 in mind, but mostl
 - Fix ArchiveSpammer to not crash and make it actually work
 - Add student scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add documentation of the project and MNS+
+- Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
 ![Main](https://user-images.githubusercontent.com/34898868/61468936-a9b9a480-a97e-11e9-868e-f1ac0aff985f.PNG)
