@@ -35,5 +35,6 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7 in mind, but mostl
 - Add student scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
+- Add a way for Process Explorer to distinguish between processes via [PID](https://de.wikipedia.org/wiki/Process_identifier)
 ## Screenshot
 ![Main](https://user-images.githubusercontent.com/34898868/61468936-a9b9a480-a97e-11e9-868e-f1ac0aff985f.PNG)
