@@ -8,15 +8,9 @@
     End Sub
 
     Private Sub Eradicate_Click(sender As Object, e As EventArgs) Handles Eradicate.Click
-        Dim myProcess() As Process = System.Diagnostics.Process.GetProcessesByName(Selection)
-        For Each kill As Process In myProcess
-            On Error GoTo ErrorMSG
-            kill.Kill()
-            GoTo Success
-ErrorMSG:
-            MsgBox("An Error Occurred", vbNo + vbCritical, "Error")
-Success:
-        Next
+        On Error Resume Next
+        Dim myProcess As Process = System.Diagnostics.Process.GetProcessById(Selection.Substring(0, Selection.IndexOf(" ")))
+        myProcess.Kill()
         Call Reset()
     End Sub
 
@@ -25,12 +19,19 @@ Success:
         For Each p As Process In Process.GetProcesses
             If Only.Checked Then
                 If Processes.Contains(p.ProcessName.ToString) Then
-                    ListBox1.Items.Add(p.ProcessName.ToString)
+                    If p.Id = Process.GetCurrentProcess().Id Then
+                        ListBox1.Items.Add("**" + p.Id.ToString + " " + p.ProcessName.ToString + "**")
+                    Else
+                        ListBox1.Items.Add(p.Id.ToString + " " + p.ProcessName.ToString)
+                    End If
                 End If
-            Else
-                ListBox1.Items.Add(p.ProcessName.ToString)
+                Else
+                If p.Id = Process.GetCurrentProcess().Id Then
+                    ListBox1.Items.Add("**" + p.Id.ToString + " " + p.ProcessName.ToString + "**")
+                Else
+                    ListBox1.Items.Add(p.Id.ToString + " " + p.ProcessName.ToString)
+                End If
             End If
-
         Next
     End Sub
 

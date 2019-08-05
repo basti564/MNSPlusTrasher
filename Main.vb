@@ -11,23 +11,9 @@ Public Class Form
         p.Start()
     End Sub
 
-    Const wbemFlagReturnImmediately = &H10
-    Const wbemFlagForwardOnly = &H20
-
     Dim wshShell = CreateObject("WScript.Shell")
     Dim objnet = CreateObject("WScript.Network")
-    Dim Raum
-    Dim Laenge
-    Dim Start
-    Dim tmp
-    Dim hostname
-    Dim Domain
-
-    Const HKEY_CURRENT_USER = &H80000001
-    Dim oReg = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\default:StdRegProv")
     Dim objFSO = CreateObject("Scripting.FileSystemObject")
-
-    Dim NBdomain = objnet.UserDomain
     Dim realUser = objnet.UserName
     Dim user = realUser
 
@@ -132,13 +118,6 @@ Public Class Form
 
     End Sub
 
-    Public Function Left(ByVal sText As String,
-  ByVal nLen As Integer) As String
-
-        If nLen > sText.Length Then nLen = sText.Length
-        Return (sText.Substring(0, nLen))
-    End Function
-
     Private Sub Schülermodul_Click(sender As Object, e As EventArgs)
         Process.Start("Http://mnsplusweb:81/schuelermodul/default.aspx")
     End Sub
@@ -153,33 +132,6 @@ Public Class Form
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
         Process.Start("Http://mnsplusweb:81/main/index.aspx")
-    End Sub
-
-    Public Function Right(ByVal sText As String,
-  ByVal nLen As Integer) As String
-
-        If nLen > sText.Length Then nLen = sText.Length
-        Return (sText.Substring(sText.Length - nLen))
-    End Function
-
-    Sub NetIdentity()
-        Const wbemFlagReturnImmediately = &H10
-        Const wbemFlagForwardOnly = &H20
-        Dim a_Domain
-
-        Dim sNode = "."
-        Dim oWMI = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\cimv2")
-        Dim colComputer = oWMI.ExecQuery("SELECT * FROM Win32_ComputerSystem", "WQL", wbemFlagReturnImmediately + wbemFlagForwardOnly)
-        For Each oComputer In colComputer
-            hostname = oComputer.Caption
-        Next
-
-        Dim objDomain = GetObject("LDAP://rootDse")
-
-        objDomain = objDomain.Get("DefaultNamingContext")
-        a_Domain = Len(objDomain)
-        a_Domain = a_Domain - 12
-        Domain = Mid(objDomain, 4, a_Domain)
     End Sub
 
     Private Sub Shortcut_Click(sender As Object, e As EventArgs) Handles Shortcut.Click

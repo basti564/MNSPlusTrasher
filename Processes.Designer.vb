@@ -94,6 +94,7 @@ Partial Class Processes
         Me.ListBox1.Location = New System.Drawing.Point(12, 41)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(145, 225)
+        Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 4
         '
         'Timer1
