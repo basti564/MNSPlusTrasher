@@ -31,11 +31,9 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7 in mind, but mostl
 - Silent option for CMD Bypass, PowerShell, PatchTC and Blackout
 - Grab IP from arbitrary PC by name (eg. 1-01 1 for RoomID and 01 for PCID)
 ## TODO
-- Add a GUI licence notice
 - Add MNSPlusTrasher update checker
 - Reduce file size (through backgrund image optimization)
 - Fix ArchiveSpammer to not crash and make it actually work
-- Prevent Windows Defender heuristics from detecting MNSPlusTrasher as fuerboos.C!cl
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
