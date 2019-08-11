@@ -232,6 +232,7 @@ Partial Class Form
         'ArchiveBtn
         '
         Me.ArchiveBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.ArchiveBtn.Enabled = False
         Me.ArchiveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ArchiveBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ArchiveBtn.ForeColor = System.Drawing.Color.Snow
@@ -407,7 +408,7 @@ Partial Class Form
         Me.MapPublicLehrer.Size = New System.Drawing.Size(88, 24)
         Me.MapPublicLehrer.TabIndex = 1
         Me.MapPublicLehrer.Text = "PublicLehrer"
-        Me.ToolTip1.SetToolTip(Me.MapPublicLehrer, "Public Homeshare Lehrer")
+        Me.ToolTip1.SetToolTip(Me.MapPublicLehrer, "Public Homeshare Lehrer (If Not Set In Settings)")
         Me.MapPublicLehrer.UseVisualStyleBackColor = False
         '
         'MapPrivatHome
@@ -421,7 +422,7 @@ Partial Class Form
         Me.MapPrivatHome.Size = New System.Drawing.Size(88, 24)
         Me.MapPrivatHome.TabIndex = 2
         Me.MapPrivatHome.Text = "PrivatHome"
-        Me.ToolTip1.SetToolTip(Me.MapPrivatHome, "Privat Homeshare (wenn nicht über Profileinstellung gesetzt)")
+        Me.ToolTip1.SetToolTip(Me.MapPrivatHome, "Privat Homeshare (If Not Set In Settings)")
         Me.MapPrivatHome.UseVisualStyleBackColor = False
         '
         'More
@@ -581,7 +582,7 @@ Partial Class Form
         Me.MaximizeBox = False
         Me.Name = "Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MNS+ Trasher 1.9 ©BOS 2019"
+        Me.Text = "MNS+ Trasher 1.9.1 ©BOS 2019"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)

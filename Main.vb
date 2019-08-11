@@ -62,9 +62,39 @@ Public Class Form
     End Sub
 
     Private Sub Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.TopMost = True
         If (Process.GetCurrentProcess().ProcessName = "TeacherConsole") Then
             Black.Show()
             Me.Text = Me.Text + " [Blackout]"
+        Else
+            Dim Location = System.Reflection.Assembly.GetExecutingAssembly().CodeBase.Remove(0, 8), DesktopPath = Strings.Replace(wshShell.SpecialFolders("Desktop"), "\", "/"), Name = "\" + Process.GetCurrentProcess().ProcessName + ".exe"
+            If Not Strings.Left(Location, Location.Length - Name.Length) = DesktopPath Then
+                If MsgBox("Do You Want To Copy MNSPlusTrasher To The Desktop?
+This Will Circumvent Some Quota Limits And Missing Permissions Errors", 48 + 1, "MNSPlusTrasher") = MsgBoxResult.Ok Then
+                    If (objFSO.FileExists(DesktopPath + Name)) Then
+                        objFSO.DeleteFile(DesktopPath + Name, True)
+                    End If
+                    Microsoft.VisualBasic.FileIO.FileSystem.CopyFile(Location, DesktopPath + Name)
+                    Process.Start(DesktopPath & Name)
+                    Process.GetCurrentProcess.Kill()
+                End If
+            End If
+            MsgBox("    MNSPlusTrasher is designed to show flaws in systems using MNS+
+    Copyright (C) 2019  Bastian Oliver Schwickert
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see 
+    <https://www.gnu.org/licenses/>.", vbOKOnly, "MNSPlusTrasher")
         End If
         If objFSO.FileExists(PrivatHome & "\links.txt") Then
             lefty.Checked = True
@@ -148,7 +178,8 @@ Public Class Form
     End Sub
 
     Private Sub ArchiveBtn_Click(sender As Object, e As EventArgs) Handles ArchiveBtn.Click
-        If MsgBox("This Option Is Highly Experimental And Will Crash!", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
+        If MsgBox("This Option Is Highly Experimental And Will Crash!
+Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
             Archive.Show()
         End If
     End Sub
@@ -210,7 +241,14 @@ Public Class Form
     End Sub
 
     Private Sub BlackBtn_Click(sender As Object, e As EventArgs) Handles BlackBtn.Click
-        Black.Show()
+        If (Process.GetCurrentProcess().ProcessName = "TeacherConsole") Then
+            Black.Show()
+        Else
+            If MsgBox("This Will End This Instance Of MNSPlusTrasher!
+Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
+                Black.Show()
+            End If
+        End If
     End Sub
 
     Private Sub GetBtn_Click(sender As Object, e As EventArgs) Handles btnIP.Click
@@ -272,7 +310,7 @@ Public Class Form
         On Error Resume Next
         Process.Start("cmd.exe", "/c net view \\MNSPlusFile\ /all > MNSPF.txt 2>&1")
         Process.Start("cmd.exe", "/c net view \\MNSPlusDC\ /all > MNSPDC.txt 2>&1")
-        Threading.Thread.Sleep(5000)
+        Threading.Thread.Sleep(10000)
         Process.Start("MNSPF.txt")
         Process.Start("MNSPDC.txt")
     End Sub

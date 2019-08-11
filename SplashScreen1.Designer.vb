@@ -49,9 +49,9 @@ Partial Class SplashScreen1
         Me.Version.ForeColor = System.Drawing.Color.DarkTurquoise
         Me.Version.Location = New System.Drawing.Point(291, 35)
         Me.Version.Name = "Version"
-        Me.Version.Size = New System.Drawing.Size(138, 39)
+        Me.Version.Size = New System.Drawing.Size(184, 39)
         Me.Version.TabIndex = 1
-        Me.Version.Text = "v{0}.{1:0}"
+        Me.Version.Text = "v{0}.{1:0}.{2}"
         '
         'Copyright
         '
