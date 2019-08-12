@@ -1,7 +1,7 @@
 # MNSPlusTrasher
 ## Intro
 MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is use by most [schools](http://mnsnet.de/db/) in Rhineland-Palatinate, Germany
-MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7 in mind, but mostly works on other versions too
+MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mostly works on other versions too
 ## Releases
 - Binaries and Changelogs are available [here](https://github.com/BastianOliverSchwickert/MNSPlusTrasher/releases) (Note: v1.0-v1.8 releases are no longer available)
 ## Source code
