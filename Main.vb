@@ -230,14 +230,14 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         sb.AppendLine("color 17")
         sb.AppendLine("title PowerShell")
         sb.AppendLine("powershell")
-        If objFSO.FileExists(DesktopPath & "\PowerShell.cmd") Then
-            objFSO.DeleteFile(DesktopPath & "\PowerShell.cmd")
+        If objFSO.FileExists(DesktopPath & "\PowerSH.cmd") Then
+            objFSO.DeleteFile(DesktopPath & "\PowerSH.cmd")
         End If
-        IO.File.WriteAllText(DesktopPath & "\PowerShell.cmd", sb.ToString())
+        IO.File.WriteAllText(DesktopPath & "\PowerSH.cmd", sb.ToString())
         If Silent.Checked = True Then
-            IO.File.SetAttributes(DesktopPath & "\PowerShell.cmd", IO.FileAttributes.Hidden)
+            IO.File.SetAttributes(DesktopPath & "\PowerSH.cmd", IO.FileAttributes.Hidden)
         End If
-        Process.Start(DesktopPath & "\PowerShell.cmd")
+        Process.Start(DesktopPath & "\PowerSH.cmd")
     End Sub
 
     Private Sub BlackBtn_Click(sender As Object, e As EventArgs) Handles BlackBtn.Click
