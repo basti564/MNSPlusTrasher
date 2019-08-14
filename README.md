@@ -33,6 +33,7 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 ## TODO
 - Add MNSPlusTrasher update checker
 - Reduce file size (through backgrund image optimization)
+- Fix PowerShell
 - Fix ArchiveSpammer to not crash and make it actually work
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add documentation of the project and MNS+
