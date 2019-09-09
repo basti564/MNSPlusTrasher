@@ -93,7 +93,7 @@ Partial Class CustomDrive
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.CustomDrive
+        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.Links
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(204, 86)
         Me.Controls.Add(Me.NetworkDrive)

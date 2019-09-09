@@ -63,26 +63,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Public ReadOnly Property Archive() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Archive", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property CustomDrive() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("CustomDrive", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Public ReadOnly Property Links() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Links", resourceCulture)
@@ -107,26 +87,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("RoomMgr", resourceCulture)
                 Return CType(obj,Byte())
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property SplashScreen() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("SplashScreen", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
-        Public ReadOnly Property WallpaperChanger() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("WallpaperChanger", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
     End Module

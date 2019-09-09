@@ -80,12 +80,14 @@ Partial Class WallpaperChanger
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.WallpaperChanger
+        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.Links
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(209, 89)
         Me.Controls.Add(Me.Wallpaper)
         Me.Controls.Add(Me.TextBoxLocation)
         Me.Controls.Add(Me.btnApply)
         Me.Controls.Add(Me.btnbrowse)
+        Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

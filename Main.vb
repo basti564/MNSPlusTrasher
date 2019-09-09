@@ -67,10 +67,9 @@ Public Class Form
             Black.Show()
             Me.Text = Me.Text + " [Blackout]"
         Else
-            Dim Location = System.Reflection.Assembly.GetExecutingAssembly().CodeBase.Remove(0, 8), DesktopPath = Strings.Replace(wshShell.SpecialFolders("Desktop"), "\", "/"), Name = "\" + Process.GetCurrentProcess().ProcessName + ".exe"
-            If Not Strings.Left(Location, Location.Length - Name.Length) = DesktopPath Then
-                If MsgBox("Do You Want To Copy MNSPlusTrasher To The Desktop?
-This Will Circumvent Some Quota Limits And Missing Permissions Errors", 48 + 1, "MNSPlusTrasher") = MsgBoxResult.Ok Then
+            If Not Debugger.IsAttached Then
+                Dim Location = System.Reflection.Assembly.GetExecutingAssembly().CodeBase.Remove(0, 8), DesktopPath = Strings.Replace(wshShell.SpecialFolders("Desktop"), "\", "/"), Name = "\" + Process.GetCurrentProcess().ProcessName + ".exe"
+                If Not Strings.Left(Location, Location.Length - Name.Length) = DesktopPath Then
                     If (objFSO.FileExists(DesktopPath + Name)) Then
                         objFSO.DeleteFile(DesktopPath + Name, True)
                     End If
@@ -79,6 +78,7 @@ This Will Circumvent Some Quota Limits And Missing Permissions Errors", 48 + 1, 
                     Process.GetCurrentProcess.Kill()
                 End If
             End If
+
             MsgBox("    MNSPlusTrasher is designed to show flaws in systems using MNS+
     Copyright (C) 2019  Bastian Oliver Schwickert
 
@@ -95,8 +95,8 @@ This Will Circumvent Some Quota Limits And Missing Permissions Errors", 48 + 1, 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see 
     <https://www.gnu.org/licenses/>.", vbOKOnly, "MNSPlusTrasher")
-        End If
-        If objFSO.FileExists(PrivatHome & "\links.txt") Then
+            End If
+            If objFSO.FileExists(PrivatHome & "\links.txt") Then
             lefty.Checked = True
         End If
         NameBox.Text = user
@@ -340,5 +340,9 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
             IO.File.SetAttributes(DesktopPath & "\CMD.cmd", IO.FileAttributes.Hidden)
         End If
         Process.Start(DesktopPath & "\CMD.cmd")
+    End Sub
+
+    Private Sub RecentBtn_Click(sender As Object, e As EventArgs) Handles RecentBtn.Click
+        Recent.Show()
     End Sub
 End Class

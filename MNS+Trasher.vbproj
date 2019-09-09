@@ -125,6 +125,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Recent.Designer.vb">
+      <DependentUpon>Recent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recent.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Shares.Designer.vb">
       <DependentUpon>Shares.vb</DependentUpon>
     </Compile>
@@ -185,6 +191,9 @@
     <EmbeddedResource Include="LSD.resx">
       <DependentUpon>LSD.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Recent.resx">
+      <DependentUpon>Recent.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Shares.resx">
       <DependentUpon>Shares.vb</DependentUpon>
     </EmbeddedResource>
@@ -240,12 +249,8 @@
   <ItemGroup>
     <Content Include="MNSplus.ico" />
     <None Include="Resources\RoomMgr.dll" />
-    <None Include="Resources\WallpaperChanger.png" />
-    <None Include="Resources\Archive.png" />
     <None Include="Resources\Links.png" />
-    <None Include="Resources\CustomDrive.png" />
     <Content Include="Resources\MainBackground.png" />
-    <None Include="Resources\SplashScreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

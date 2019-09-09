@@ -11,7 +11,7 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 - Delete /MNS+/ Tempfiles
 - Show [WebLogs](http://mnsplusproxy/) (Permissions required)
 - Open MNS+ v2 Module
-- ArchiveSpammer (Currently Borken)
+- View users that recently logged onto the current PC
 - Open [MNS+ Support](https://mns.bildung-rp.de/mnsdb/)
 - PowerShell (No bypass)
 - WallpaperChanger
@@ -32,9 +32,6 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 - Grab IP from arbitrary PC by name (eg. 1-01 1 for RoomID and 01 for PCID)
 ## TODO
 - Add MNSPlusTrasher update checker
-- Reduce file size (through backgrund image optimization)
-- Fix PowerShell
-- Fix ArchiveSpammer to not crash and make it actually work
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version

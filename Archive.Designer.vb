@@ -90,7 +90,7 @@ Partial Class Archive
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.Archive
+        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.Links
         Me.ClientSize = New System.Drawing.Size(154, 86)
         Me.Controls.Add(Me.ArchiveTxt)
         Me.Controls.Add(Me.IntervallBox)

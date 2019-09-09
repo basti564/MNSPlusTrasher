@@ -82,7 +82,7 @@ Partial Class SplashScreen1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.SplashScreen
+        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(498, 298)
         Me.ControlBox = False

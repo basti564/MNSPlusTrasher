@@ -59,6 +59,7 @@ Partial Class Form
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.RecentBtn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -126,7 +127,7 @@ Partial Class Form
         Me.Spoof.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Spoof.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Spoof.ForeColor = System.Drawing.Color.Black
-        Me.Spoof.Location = New System.Drawing.Point(103, 75)
+        Me.Spoof.Location = New System.Drawing.Point(103, 76)
         Me.Spoof.Name = "Spoof"
         Me.Spoof.Size = New System.Drawing.Size(88, 24)
         Me.Spoof.TabIndex = 7
@@ -236,13 +237,15 @@ Partial Class Form
         Me.ArchiveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ArchiveBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ArchiveBtn.ForeColor = System.Drawing.Color.Snow
-        Me.ArchiveBtn.Location = New System.Drawing.Point(288, 22)
+        Me.ArchiveBtn.Location = New System.Drawing.Point(401, 232)
         Me.ArchiveBtn.Name = "ArchiveBtn"
         Me.ArchiveBtn.Size = New System.Drawing.Size(88, 24)
         Me.ArchiveBtn.TabIndex = 4
+        Me.ArchiveBtn.TabStop = False
         Me.ArchiveBtn.Text = "ArchiveSpam"
         Me.ToolTip1.SetToolTip(Me.ArchiveBtn, "Archive Spammer (Experimental)")
         Me.ArchiveBtn.UseVisualStyleBackColor = False
+        Me.ArchiveBtn.Visible = False
         '
         'MapCustom
         '
@@ -361,7 +364,7 @@ Partial Class Form
         '
         Me.txtIP.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtIP.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIP.Location = New System.Drawing.Point(197, 74)
+        Me.txtIP.Location = New System.Drawing.Point(197, 76)
         Me.txtIP.Name = "txtIP"
         Me.txtIP.Size = New System.Drawing.Size(42, 23)
         Me.txtIP.TabIndex = 8
@@ -375,7 +378,7 @@ Partial Class Form
         Me.btnIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnIP.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIP.ForeColor = System.Drawing.Color.Black
-        Me.btnIP.Location = New System.Drawing.Point(242, 74)
+        Me.btnIP.Location = New System.Drawing.Point(242, 76)
         Me.btnIP.Name = "btnIP"
         Me.btnIP.Size = New System.Drawing.Size(40, 24)
         Me.btnIP.TabIndex = 9
@@ -487,6 +490,7 @@ Partial Class Form
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.RecentBtn)
         Me.GroupBox1.Controls.Add(Me.CMD)
         Me.GroupBox1.Controls.Add(Me.BlackBtn)
         Me.GroupBox1.Controls.Add(Me.LSDbtn)
@@ -496,7 +500,6 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.Links)
         Me.GroupBox1.Controls.Add(Me.delTemp)
         Me.GroupBox1.Controls.Add(Me.ProcessesBtn)
-        Me.GroupBox1.Controls.Add(Me.ArchiveBtn)
         Me.GroupBox1.Controls.Add(Me.TrayIcon)
         Me.GroupBox1.Controls.Add(Me.Wall)
         Me.GroupBox1.Controls.Add(Me.Support)
@@ -563,6 +566,20 @@ Partial Class Form
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Shares"
         '
+        'RecentBtn
+        '
+        Me.RecentBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.RecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.RecentBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecentBtn.ForeColor = System.Drawing.Color.Snow
+        Me.RecentBtn.Location = New System.Drawing.Point(288, 22)
+        Me.RecentBtn.Name = "RecentBtn"
+        Me.RecentBtn.Size = New System.Drawing.Size(88, 24)
+        Me.RecentBtn.TabIndex = 4
+        Me.RecentBtn.Text = "Recent"
+        Me.ToolTip1.SetToolTip(Me.RecentBtn, "Lists Recent Users Logged Into The Local PC")
+        Me.RecentBtn.UseVisualStyleBackColor = False
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -573,6 +590,7 @@ Partial Class Form
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.ArchiveBtn)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -582,7 +600,7 @@ Partial Class Form
         Me.MaximizeBox = False
         Me.Name = "Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MNS+ Trasher 1.9.2 ©BOS 2019"
+        Me.Text = "MNS+ Trasher 1.9.3 ©BOS 2019"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
@@ -626,4 +644,5 @@ Partial Class Form
     Friend WithEvents FindBtn As Button
     Friend WithEvents CMD As Button
     Friend WithEvents Silent As CheckBox
+    Friend WithEvents RecentBtn As Button
 End Class
