@@ -26,7 +26,7 @@ Partial Class Form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form))
         Me.RefreshBtn = New System.Windows.Forms.Button()
         Me.lefty = New System.Windows.Forms.CheckBox()
-        Me.delTemp = New System.Windows.Forms.Button()
+        Me.msgBtn = New System.Windows.Forms.Button()
         Me.NameBox = New System.Windows.Forms.TextBox()
         Me.Spoof = New System.Windows.Forms.Button()
         Me.RoomBox = New System.Windows.Forms.TextBox()
@@ -95,19 +95,19 @@ Partial Class Form
         Me.ToolTip1.SetToolTip(Me.lefty, "Let MNS+ Think You Are A Lefty (Swaps Mouse Buttons After Next Login)")
         Me.lefty.UseVisualStyleBackColor = False
         '
-        'delTemp
+        'msgBtn
         '
-        Me.delTemp.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.delTemp.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.delTemp.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.delTemp.ForeColor = System.Drawing.Color.Snow
-        Me.delTemp.Location = New System.Drawing.Point(6, 22)
-        Me.delTemp.Name = "delTemp"
-        Me.delTemp.Size = New System.Drawing.Size(88, 24)
-        Me.delTemp.TabIndex = 1
-        Me.delTemp.Text = "DelTemp"
-        Me.ToolTip1.SetToolTip(Me.delTemp, "Delete Temp Files")
-        Me.delTemp.UseVisualStyleBackColor = False
+        Me.msgBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.msgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.msgBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.msgBtn.ForeColor = System.Drawing.Color.Snow
+        Me.msgBtn.Location = New System.Drawing.Point(6, 22)
+        Me.msgBtn.Name = "msgBtn"
+        Me.msgBtn.Size = New System.Drawing.Size(88, 24)
+        Me.msgBtn.TabIndex = 1
+        Me.msgBtn.Text = "AWBMsg"
+        Me.ToolTip1.SetToolTip(Me.msgBtn, "Send Spoofed Messages To The AWB (Requires Permissions To Write To T:\Admin)")
+        Me.msgBtn.UseVisualStyleBackColor = False
         '
         'NameBox
         '
@@ -512,7 +512,7 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.PowerShell)
         Me.GroupBox1.Controls.Add(Me.Volume)
         Me.GroupBox1.Controls.Add(Me.Links)
-        Me.GroupBox1.Controls.Add(Me.delTemp)
+        Me.GroupBox1.Controls.Add(Me.msgBtn)
         Me.GroupBox1.Controls.Add(Me.ProcessesBtn)
         Me.GroupBox1.Controls.Add(Me.TrayIcon)
         Me.GroupBox1.Controls.Add(Me.Wall)
@@ -600,7 +600,7 @@ Partial Class Form
         Me.MaximizeBox = False
         Me.Name = "Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MNS+ Trasher 1.9.3a ©BOS 2019"
+        Me.Text = "MNS+ Trasher 1.9.4 ©BOS 2019"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
@@ -611,7 +611,7 @@ Partial Class Form
     End Sub
     Friend WithEvents RefreshBtn As Button
     Friend WithEvents lefty As CheckBox
-    Friend WithEvents delTemp As Button
+    Friend WithEvents msgBtn As Button
     Friend WithEvents NameBox As TextBox
     Friend WithEvents Spoof As Button
     Friend WithEvents RoomBox As TextBox

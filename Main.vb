@@ -102,18 +102,8 @@ Public Class Form
         NameBox.Text = user
     End Sub
 
-    Private Sub delTemp_Click(sender As Object, e As EventArgs) Handles delTemp.Click
-        On Error Resume Next ' skip undeletable temp files...
-        Dim tmppath = wshShell.ExpandEnvironmentStrings("%TEMP%")
-        If objFSO.FolderExists(tmppath) Then
-            Dim fldr = objFSO.GetFolder(tmppath)
-            For Each f In fldr.Files
-                f.delete(True)
-            Next
-            For Each f In fldr.SubFolders
-                f.delete(True)
-            Next
-        End If
+    Private Sub delTemp_Click(sender As Object, e As EventArgs) Handles msgBtn.Click
+        MSG.Show()
     End Sub
 
     Private Sub Refresh_Click(sender As Object, e As EventArgs) Handles RefreshBtn.Click

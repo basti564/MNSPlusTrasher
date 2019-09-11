@@ -120,6 +120,12 @@
     <Compile Include="LSD.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MSG.Designer.vb">
+      <DependentUpon>MSG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MSG.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LSD.resx">
       <DependentUpon>LSD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSG.resx">
+      <DependentUpon>MSG.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Recent.resx">
       <DependentUpon>Recent.vb</DependentUpon>
