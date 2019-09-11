@@ -22,10 +22,10 @@ Partial Class Recent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recent))
         Me.UserList = New System.Windows.Forms.ListBox()
         Me.NameTxt = New System.Windows.Forms.Label()
         Me.fAccessTxt = New System.Windows.Forms.Label()
-        Me.ActionTxt = New System.Windows.Forms.Label()
         Me.AccessTxt = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -51,27 +51,17 @@ Partial Class Recent
         '
         Me.fAccessTxt.AutoSize = True
         Me.fAccessTxt.BackColor = System.Drawing.Color.Transparent
-        Me.fAccessTxt.Location = New System.Drawing.Point(12, 294)
+        Me.fAccessTxt.Location = New System.Drawing.Point(12, 268)
         Me.fAccessTxt.Name = "fAccessTxt"
         Me.fAccessTxt.Size = New System.Drawing.Size(31, 13)
         Me.fAccessTxt.TabIndex = 7
         Me.fAccessTxt.Text = "*first*"
         '
-        'ActionTxt
-        '
-        Me.ActionTxt.AutoSize = True
-        Me.ActionTxt.BackColor = System.Drawing.Color.Transparent
-        Me.ActionTxt.Location = New System.Drawing.Point(12, 281)
-        Me.ActionTxt.Name = "ActionTxt"
-        Me.ActionTxt.Size = New System.Drawing.Size(44, 13)
-        Me.ActionTxt.TabIndex = 6
-        Me.ActionTxt.Text = "*action*"
-        '
         'AccessTxt
         '
         Me.AccessTxt.AutoSize = True
         Me.AccessTxt.BackColor = System.Drawing.Color.Transparent
-        Me.AccessTxt.Location = New System.Drawing.Point(12, 268)
+        Me.AccessTxt.Location = New System.Drawing.Point(12, 281)
         Me.AccessTxt.Name = "AccessTxt"
         Me.AccessTxt.Size = New System.Drawing.Size(49, 13)
         Me.AccessTxt.TabIndex = 5
@@ -82,14 +72,14 @@ Partial Class Recent
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.ClientSize = New System.Drawing.Size(239, 315)
+        Me.ClientSize = New System.Drawing.Size(239, 298)
         Me.Controls.Add(Me.NameTxt)
         Me.Controls.Add(Me.fAccessTxt)
-        Me.Controls.Add(Me.ActionTxt)
         Me.Controls.Add(Me.AccessTxt)
         Me.Controls.Add(Me.UserList)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recent"
         Me.Text = "Recent Users"
         Me.ResumeLayout(False)
@@ -100,6 +90,5 @@ Partial Class Recent
     Friend WithEvents UserList As ListBox
     Friend WithEvents NameTxt As Label
     Friend WithEvents fAccessTxt As Label
-    Friend WithEvents ActionTxt As Label
     Friend WithEvents AccessTxt As Label
 End Class

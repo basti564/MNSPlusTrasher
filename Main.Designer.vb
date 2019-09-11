@@ -55,11 +55,11 @@ Partial Class Form
         Me.FindBtn = New System.Windows.Forms.Button()
         Me.CMD = New System.Windows.Forms.Button()
         Me.Silent = New System.Windows.Forms.CheckBox()
+        Me.RecentBtn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.RecentBtn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -487,6 +487,20 @@ Partial Class Form
         Me.ToolTip1.SetToolTip(Me.Silent, "Hide Temporary Files")
         Me.Silent.UseVisualStyleBackColor = False
         '
+        'RecentBtn
+        '
+        Me.RecentBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.RecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.RecentBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecentBtn.ForeColor = System.Drawing.Color.Snow
+        Me.RecentBtn.Location = New System.Drawing.Point(288, 22)
+        Me.RecentBtn.Name = "RecentBtn"
+        Me.RecentBtn.Size = New System.Drawing.Size(88, 24)
+        Me.RecentBtn.TabIndex = 4
+        Me.RecentBtn.Text = "Recent"
+        Me.ToolTip1.SetToolTip(Me.RecentBtn, "Lists Recent Users Logged Into The Local PC")
+        Me.RecentBtn.UseVisualStyleBackColor = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
@@ -565,20 +579,6 @@ Partial Class Form
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Shares"
-        '
-        'RecentBtn
-        '
-        Me.RecentBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.RecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.RecentBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecentBtn.ForeColor = System.Drawing.Color.Snow
-        Me.RecentBtn.Location = New System.Drawing.Point(288, 22)
-        Me.RecentBtn.Name = "RecentBtn"
-        Me.RecentBtn.Size = New System.Drawing.Size(88, 24)
-        Me.RecentBtn.TabIndex = 4
-        Me.RecentBtn.Text = "Recent"
-        Me.ToolTip1.SetToolTip(Me.RecentBtn, "Lists Recent Users Logged Into The Local PC")
-        Me.RecentBtn.UseVisualStyleBackColor = False
         '
         'Form
         '
