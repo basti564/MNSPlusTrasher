@@ -8,7 +8,7 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 - This project is completely open source and it will be kept like it in the future
 - The source code can be found [here](https://github.com/BastianOliverSchwickert/MNSPlusTrasher) on GitHub
 ## Current features:
-- Delete /MNS+/ Tempfiles
+- AWBSpoofer spoofs messages adressed to the AWB
 - Show [WebLogs](http://mnsplusproxy/) (Permissions required)
 - Open MNS+ v2 Module
 - View users that recently logged onto the current PC
