@@ -22,7 +22,7 @@
     Dim SrvCD = Fileserver & "ROM$"                  'CD/DVD des Servers
     Dim AWBShare = Fileserver & "Anwendungsbetreuer$"
 
-    Private Sub MapAWBShare_Click(sender As Object, e As EventArgs)
+    Private Sub MapAWBShare_Click_1(sender As Object, e As EventArgs) Handles MapAWBShare.Click
         If objFSO.FolderExists("S:") Then
             objnet.RemoveNetworkDrive("S:")
         Else
@@ -30,7 +30,7 @@
         End If
     End Sub
 
-    Private Sub MapSrvCD_Click(sender As Object, e As EventArgs)
+    Private Sub MapSrvCD_Click_1(sender As Object, e As EventArgs) Handles MapSrvCD.Click
         If objFSO.FolderExists("U:") Then
             objnet.RemoveNetworkDrive("U:")
         Else
@@ -38,7 +38,7 @@
         End If
     End Sub
 
-    Private Sub MapNetProg_Click(sender As Object, e As EventArgs)
+    Private Sub MapNetProg_Click_1(sender As Object, e As EventArgs) Handles MapNetProg.Click
         If objFSO.FolderExists("V:") Then
             objnet.RemoveNetworkDrive("V:")
         Else
@@ -46,7 +46,7 @@
         End If
     End Sub
 
-    Private Sub MapAlleAG_Click(sender As Object, e As EventArgs)
+    Private Sub MapAlleAG_Click_1(sender As Object, e As EventArgs) Handles MapAlleAG.Click
         If objFSO.FolderExists("N:") Then
             objnet.RemoveNetworkDrive("N:")
         Else
@@ -54,7 +54,7 @@
         End If
     End Sub
 
-    Private Sub MapAlleKurse_Click(sender As Object, e As EventArgs)
+    Private Sub MapAlleKurse_Click_1(sender As Object, e As EventArgs) Handles MapAlleKurse.Click
         If objFSO.FolderExists("M:") Then
             objnet.RemoveNetworkDrive("M:")
         Else
@@ -62,7 +62,7 @@
         End If
     End Sub
 
-    Private Sub MapAlleKlassen_Click(sender As Object, e As EventArgs)
+    Private Sub MapAlleKlassen_Click_1(sender As Object, e As EventArgs) Handles MapAlleKlassen.Click
         If objFSO.FolderExists("I:") Then
             objnet.RemoveNetworkDrive("I:")
         Else
@@ -70,7 +70,7 @@
         End If
     End Sub
 
-    Private Sub MapTauschLehrer_Click(sender As Object, e As EventArgs)
+    Private Sub MapTauschLehrer_Click_1(sender As Object, e As EventArgs) Handles MapTauschLehrer.Click
         If objFSO.FolderExists("T:") Then
             objnet.RemoveNetworkDrive("T:")
         Else
@@ -78,7 +78,7 @@
         End If
     End Sub
 
-    Private Sub MapPublicLehrerSchüler_Click(sender As Object, e As EventArgs)
+    Private Sub MapPublicLehrerSchüler_Click_1(sender As Object, e As EventArgs) Handles MapPublicLehrerSchüler.Click
         If objFSO.FolderExists("P:") Then
             objnet.RemoveNetworkDrive("P:")
         Else
@@ -86,7 +86,7 @@
         End If
     End Sub
 
-    Private Sub MapHomesSchüler_Click(sender As Object, e As EventArgs)
+    Private Sub MapHomesSchüler_Click_1(sender As Object, e As EventArgs) Handles MapHomesSchüler.Click
         If objFSO.FolderExists("O:") Then
             objnet.RemoveNetworkDrive("O:")
         Else
