@@ -36,4 +36,4 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
-![Main](https://user-images.githubusercontent.com/34898868/61468936-a9b9a480-a97e-11e9-868e-f1ac0aff985f.PNG)
+![Main](https://user-images.githubusercontent.com/34898868/64895718-a8a2ac00-d67d-11e9-9fa5-e80a4aaf4eba.PNG)
