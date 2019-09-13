@@ -28,7 +28,6 @@ Partial Class Processes
         Me.Eradicate = New System.Windows.Forms.Button()
         Me.Only = New System.Windows.Forms.CheckBox()
         Me.RefreshBtn = New System.Windows.Forms.Button()
-        Me.DirectorySearcher1 = New System.DirectoryServices.DirectorySearcher()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
@@ -41,9 +40,9 @@ Partial Class Processes
         Me.Eradicate.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Eradicate.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Eradicate.ForeColor = System.Drawing.Color.Snow
-        Me.Eradicate.Location = New System.Drawing.Point(12, 271)
+        Me.Eradicate.Location = New System.Drawing.Point(12, 300)
         Me.Eradicate.Name = "Eradicate"
-        Me.Eradicate.Size = New System.Drawing.Size(145, 23)
+        Me.Eradicate.Size = New System.Drawing.Size(221, 23)
         Me.Eradicate.TabIndex = 5
         Me.Eradicate.Text = "Eradicate"
         Me.ToolTip1.SetToolTip(Me.Eradicate, "Eradicate Selected Task")
@@ -54,7 +53,7 @@ Partial Class Processes
         Me.Only.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Only.AutoSize = True
         Me.Only.BackColor = System.Drawing.Color.Transparent
-        Me.Only.Location = New System.Drawing.Point(142, 17)
+        Me.Only.Location = New System.Drawing.Point(218, 17)
         Me.Only.Name = "Only"
         Me.Only.Size = New System.Drawing.Size(15, 14)
         Me.Only.TabIndex = 3
@@ -72,17 +71,11 @@ Partial Class Processes
         Me.RefreshBtn.ForeColor = System.Drawing.Color.Snow
         Me.RefreshBtn.Location = New System.Drawing.Point(12, 12)
         Me.RefreshBtn.Name = "RefreshBtn"
-        Me.RefreshBtn.Size = New System.Drawing.Size(124, 23)
+        Me.RefreshBtn.Size = New System.Drawing.Size(200, 23)
         Me.RefreshBtn.TabIndex = 2
         Me.RefreshBtn.Text = "Refresh"
         Me.ToolTip1.SetToolTip(Me.RefreshBtn, "Refresh Process List")
         Me.RefreshBtn.UseVisualStyleBackColor = False
-        '
-        'DirectorySearcher1
-        '
-        Me.DirectorySearcher1.ClientTimeout = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01")
-        Me.DirectorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01")
         '
         'ListBox1
         '
@@ -93,7 +86,7 @@ Partial Class Processes
         Me.ListBox1.Items.AddRange(New Object() {"Placeholder"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(145, 225)
+        Me.ListBox1.Size = New System.Drawing.Size(221, 251)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 4
         '
@@ -107,7 +100,7 @@ Partial Class Processes
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Azure
-        Me.ClientSize = New System.Drawing.Size(169, 306)
+        Me.ClientSize = New System.Drawing.Size(245, 335)
         Me.Controls.Add(Me.RefreshBtn)
         Me.Controls.Add(Me.Only)
         Me.Controls.Add(Me.Eradicate)
@@ -116,13 +109,12 @@ Partial Class Processes
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "Processes"
-        Me.Text = "Experiments"
+        Me.Text = " "
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents DirectorySearcher1 As DirectoryServices.DirectorySearcher
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents Eradicate As Button
     Friend WithEvents Only As CheckBox

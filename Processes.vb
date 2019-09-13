@@ -20,16 +20,16 @@
             If Only.Checked Then
                 If Processes.Contains(p.ProcessName.ToString) Then
                     If p.Id = Process.GetCurrentProcess().Id Then
-                        ListBox1.Items.Add("**" + p.Id.ToString + " " + p.ProcessName.ToString + "**")
+                        ListBox1.Items.Add("**" + p.Id.ToString("X8") + " " + p.ProcessName.ToString + "**")
                     Else
-                        ListBox1.Items.Add(p.Id.ToString + " " + p.ProcessName.ToString)
+                        ListBox1.Items.Add(p.Id.ToString("X8") + " " + p.ProcessName.ToString)
                     End If
                 End If
                 Else
                 If p.Id = Process.GetCurrentProcess().Id Then
-                    ListBox1.Items.Add("**" + p.Id.ToString + " " + p.ProcessName.ToString + "**")
+                    ListBox1.Items.Add("**" + p.Id.ToString("X8") + " " + p.ProcessName.ToString + "**")
                 Else
-                    ListBox1.Items.Add(p.Id.ToString + " " + p.ProcessName.ToString)
+                    ListBox1.Items.Add(p.Id.ToString("X8") + " " + p.ProcessName.ToString)
                 End If
             End If
         Next
