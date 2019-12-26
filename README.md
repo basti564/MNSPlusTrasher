@@ -3,10 +3,10 @@
 MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is use by most [schools](http://mnsnet.de/db/) in Rhineland-Palatinate, Germany
 MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mostly works on other versions too
 ## Releases
-- Binaries and Changelogs are available [here](https://github.com/BastianOliverSchwickert/MNSPlusTrasher/releases) (Note: v1.0-v1.8 releases are no longer available)
+- Binaries and Changelogs are available [here](https://github.com/basti564/MNSPlusTrasher/releases) (Note: v1.0-v1.8 releases are no longer available)
 ## Source code
 - This project is completely open source and it will be kept like it in the future
-- The source code can be found [here](https://github.com/BastianOliverSchwickert/MNSPlusTrasher) on GitHub
+- The source code can be found [here](https://github.com/basti564/MNSPlusTrasher) on GitHub
 ## Current features:
 - AWBSpoofer spoofs messages adressed to the AWB
 - Show [WebLogs](http://mnsplusproxy/) (Permissions required)
@@ -36,4 +36,4 @@ MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mo
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
-![Main](https://user-images.githubusercontent.com/34898868/61468936-a9b9a480-a97e-11e9-868e-f1ac0aff985f.PNG)
+![Main](https://user-images.githubusercontent.com/34898868/64895718-a8a2ac00-d67d-11e9-9fa5-e80a4aaf4eba.PNG)
