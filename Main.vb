@@ -115,12 +115,16 @@ Public Class Form
     End Sub
 
     Private Sub Spoof_Click(sender As Object, e As EventArgs) Handles Spoof.Click
-        If objFSO.FolderExists("A:") Then
-            objnet.RemoveNetworkDrive("A:")
-            Threading.Thread.Sleep(500)
-        End If
-        objnet.MapNetworkDrive("A:", Fileserver & RoomBox.Text & "$", False)
-        RoomTxt.Text = "Room: " & RoomBox.Text
+        Try
+            If objFSO.FolderExists("A:") Then
+                objnet.RemoveNetworkDrive("A:")
+                Threading.Thread.Sleep(500)
+            End If
+            objnet.MapNetworkDrive("A:", Fileserver & RoomBox.Text & "$", False)
+            RoomTxt.Text = "Room: " & RoomBox.Text
+        Catch ex As Exception
+            MsgBox(ex.Message, 16, "ERROR!")
+        End Try
     End Sub
 
     Sub MNSLink(sTURL, linklabel)
