@@ -57,7 +57,7 @@ Partial Class Processes
         Me.Only.Name = "Only"
         Me.Only.Size = New System.Drawing.Size(15, 14)
         Me.Only.TabIndex = 3
-        Me.ToolTip1.SetToolTip(Me.Only, "Only Include MNS+ Processes (Incomplete List)")
+        Me.ToolTip1.SetToolTip(Me.Only, "Only Include MNS+ Processes (Probably Incomplete List)")
         Me.Only.UseVisualStyleBackColor = False
         '
         'RefreshBtn
