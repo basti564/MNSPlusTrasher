@@ -201,7 +201,8 @@ Public Class Form
         If Not (objFSO.FolderExists(DesktopPath & "\MNS Fernsteuerung.net")) Then
             Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory(DesktopPath & "\MNS Fernsteuerung.net")
             If Silent.Checked = True Then
-                IO.File.SetAttributes(DesktopPath & "\MNS Fernsteuerung.net", IO.FileAttributes.Hidden)
+                IO.File.SetAttributes(DesktopPath & "\MNS Fernsteuerung.net", IO.FileAttributes.Hidden Or
+                                  IO.FileAttributes.System)
             End If
         End If
         On Error Resume Next
@@ -226,7 +227,8 @@ Public Class Form
         End If
         IO.File.WriteAllText(DesktopPath & "\PowerSH.cmd", sb.ToString())
         If Silent.Checked = True Then
-            IO.File.SetAttributes(DesktopPath & "\PowerSH.cmd", IO.FileAttributes.Hidden)
+            IO.File.SetAttributes(DesktopPath & "\PowerSH.cmd", IO.FileAttributes.Hidden Or
+                                  IO.FileAttributes.System)
         End If
         Process.Start(DesktopPath & "\PowerSH.cmd")
     End Sub
@@ -328,7 +330,8 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         End If
         IO.File.WriteAllText(DesktopPath & "\CMD.cmd", sb.ToString())
         If Silent.Checked = True Then
-            IO.File.SetAttributes(DesktopPath & "\CMD.cmd", IO.FileAttributes.Hidden)
+            IO.File.SetAttributes(DesktopPath & "\CMD.cmd", IO.FileAttributes.Hidden Or
+                                  IO.FileAttributes.System)
         End If
         Process.Start(DesktopPath & "\CMD.cmd")
     End Sub
