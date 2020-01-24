@@ -102,12 +102,6 @@
     <Compile Include="CustomDrive.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Archive.Designer.vb">
-      <DependentUpon>Archive.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Archive.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Black.Designer.vb">
       <DependentUpon>Black.vb</DependentUpon>
     </Compile>
@@ -185,9 +179,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Archive.resx">
-      <DependentUpon>Archive.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CustomDrive.resx">
       <DependentUpon>CustomDrive.vb</DependentUpon>
     </EmbeddedResource>

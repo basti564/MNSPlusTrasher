@@ -37,7 +37,6 @@ Partial Class Form
         Me.Shortcut = New System.Windows.Forms.Button()
         Me.WebLogs = New System.Windows.Forms.Button()
         Me.Wall = New System.Windows.Forms.Button()
-        Me.ArchiveBtn = New System.Windows.Forms.Button()
         Me.MapCustom = New System.Windows.Forms.Button()
         Me.TrayIcon = New System.Windows.Forms.Button()
         Me.ProcessesBtn = New System.Windows.Forms.Button()
@@ -229,23 +228,6 @@ Partial Class Form
         Me.Wall.Text = "Wallpaper"
         Me.ToolTip1.SetToolTip(Me.Wall, "Change The Wallpaper")
         Me.Wall.UseVisualStyleBackColor = False
-        '
-        'ArchiveBtn
-        '
-        Me.ArchiveBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.ArchiveBtn.Enabled = False
-        Me.ArchiveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ArchiveBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ArchiveBtn.ForeColor = System.Drawing.Color.Snow
-        Me.ArchiveBtn.Location = New System.Drawing.Point(401, 232)
-        Me.ArchiveBtn.Name = "ArchiveBtn"
-        Me.ArchiveBtn.Size = New System.Drawing.Size(88, 24)
-        Me.ArchiveBtn.TabIndex = 4
-        Me.ArchiveBtn.TabStop = False
-        Me.ArchiveBtn.Text = "ArchiveSpam"
-        Me.ToolTip1.SetToolTip(Me.ArchiveBtn, "Archive Spammer (Experimental)")
-        Me.ArchiveBtn.UseVisualStyleBackColor = False
-        Me.ArchiveBtn.Visible = False
         '
         'MapCustom
         '
@@ -590,7 +572,6 @@ Partial Class Form
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.ArchiveBtn)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -622,7 +603,6 @@ Partial Class Form
     Friend WithEvents Shortcut As Button
     Friend WithEvents WebLogs As Button
     Friend WithEvents Wall As Button
-    Friend WithEvents ArchiveBtn As Button
     Friend WithEvents MapCustom As Button
     Friend WithEvents TrayIcon As Button
     Friend WithEvents ProcessesBtn As Button

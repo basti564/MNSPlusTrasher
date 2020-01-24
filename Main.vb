@@ -167,13 +167,6 @@ Public Class Form
         WallpaperChanger.Show()
     End Sub
 
-    Private Sub ArchiveBtn_Click(sender As Object, e As EventArgs) Handles ArchiveBtn.Click
-        If MsgBox("This Option Is Highly Experimental And Will Crash!
-Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
-            Archive.Show()
-        End If
-    End Sub
-
     Private Sub MapCustom_Click(sender As Object, e As EventArgs) Handles MapCustom.Click
         CustomDrive.Show()
     End Sub
