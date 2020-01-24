@@ -96,8 +96,10 @@ Public Class Form
     along with this program.  If not, see 
     <https://www.gnu.org/licenses/>.", vbOKOnly, "MNSPlusTrasher")
             End If
-            If objFSO.FileExists(PrivatHome & "\links.txt") Then
+        If objFSO.FileExists(PrivatHome & "\links.txt") Then
             lefty.Checked = True
+        Else
+            lefty.Checked = False
         End If
         NameBox.Text = user
     End Sub
@@ -111,6 +113,8 @@ Public Class Form
 
         If objFSO.FileExists(PrivatHome & "\links.txt") Then
             lefty.Checked = True
+        Else
+            lefty.Checked = False
         End If
     End Sub
 
