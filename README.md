@@ -2,7 +2,7 @@
 ## Intro
 MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is use by most [schools](http://mnsnet.de/db/) in Rhineland-Palatinate, Germany
 MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mostly works on other versions too
-## Explanation 
+## Explanation
 The explanation of the main exploit used by TeacherConsolePatcher can be found [here](https://github.com/basti564/mns-patcher) on GitHub
 ## Releases
 - Binaries and Changelogs are available [here](https://github.com/basti564/MNSPlusTrasher/releases) (Note: v1.0-v1.8 releases are no longer available)
@@ -32,6 +32,7 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - RoomShareSpoofer (Spoofs current room share)
 - Silent option for CMD Bypass, PowerShell, PatchTC and Blackout
 - Grab IP from arbitrary PC by name (eg. 1-01 1 for RoomID and 01 for PCID)
+- Hide and Show all folders & files in the home share
 ## TODO
 - Add MNSPlusTrasher update checker
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
