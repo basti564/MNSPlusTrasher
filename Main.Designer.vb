@@ -55,6 +55,8 @@ Partial Class Form
         Me.CMD = New System.Windows.Forms.Button()
         Me.Silent = New System.Windows.Forms.CheckBox()
         Me.RecentBtn = New System.Windows.Forms.Button()
+        Me.HideBtn = New System.Windows.Forms.Button()
+        Me.ShowBtn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
@@ -483,6 +485,34 @@ Partial Class Form
         Me.ToolTip1.SetToolTip(Me.RecentBtn, "Lists Recent Users Logged Into The Local PC")
         Me.RecentBtn.UseVisualStyleBackColor = False
         '
+        'HideBtn
+        '
+        Me.HideBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.HideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HideBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HideBtn.ForeColor = System.Drawing.Color.Snow
+        Me.HideBtn.Location = New System.Drawing.Point(12, 149)
+        Me.HideBtn.Name = "HideBtn"
+        Me.HideBtn.Size = New System.Drawing.Size(88, 24)
+        Me.HideBtn.TabIndex = 17
+        Me.HideBtn.Text = "HideHome"
+        Me.ToolTip1.SetToolTip(Me.HideBtn, "Hide All Files And Folders In PrivateHome")
+        Me.HideBtn.UseVisualStyleBackColor = False
+        '
+        'ShowBtn
+        '
+        Me.ShowBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.ShowBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ShowBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ShowBtn.ForeColor = System.Drawing.Color.Snow
+        Me.ShowBtn.Location = New System.Drawing.Point(106, 149)
+        Me.ShowBtn.Name = "ShowBtn"
+        Me.ShowBtn.Size = New System.Drawing.Size(88, 24)
+        Me.ShowBtn.TabIndex = 18
+        Me.ShowBtn.Text = "ShowHome"
+        Me.ToolTip1.SetToolTip(Me.ShowBtn, "Show All Files And Folders In PrivateHome")
+        Me.ShowBtn.UseVisualStyleBackColor = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
@@ -527,7 +557,7 @@ Partial Class Form
         Me.GroupBox3.Controls.Add(Me.NameBox)
         Me.GroupBox3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 156)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 195)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(288, 105)
         Me.GroupBox3.TabIndex = 3
@@ -568,7 +598,9 @@ Partial Class Form
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
-        Me.ClientSize = New System.Drawing.Size(502, 265)
+        Me.ClientSize = New System.Drawing.Size(502, 304)
+        Me.Controls.Add(Me.HideBtn)
+        Me.Controls.Add(Me.ShowBtn)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
@@ -625,4 +657,6 @@ Partial Class Form
     Friend WithEvents CMD As Button
     Friend WithEvents Silent As CheckBox
     Friend WithEvents RecentBtn As Button
+    Friend WithEvents HideBtn As Button
+    Friend WithEvents ShowBtn As Button
 End Class

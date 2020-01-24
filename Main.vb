@@ -314,6 +314,20 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         sb.AppendLine("@echo off")
         sb.AppendLine("cls")
         sb.AppendLine("title Command Prompt     [Bypass by Bastian Oliver Schwickert]")
+
+        If Not (IO.Directory.Exists(PrivatHome + "\PATH\")) Then
+            If MsgBox("Do you want to add " + PrivatHome + "\PATH\ to the PATH?", 32 + 4, "Add to the PATH") = MsgBoxResult.Yes Then
+                Try
+                    IO.Directory.CreateDirectory(PrivatHome + "\PATH\")
+                    sb.AppendLine("set PATH=%path%;" + PrivatHome + "\PATH\")
+                Catch ex As Exception
+                    MsgBox(ex.Message, 16, "ERROR!")
+                End Try
+            End If
+        Else
+            sb.AppendLine("set PATH=%path%;" + PrivatHome + "\PATH\")
+        End If
+
         sb.AppendLine("for /f ""tokens=4* delims=. "" %%i in ('ver') do set VERSION=%%i.%%j")
         sb.AppendLine("echo Microsoft Windows [Version %version%")
         sb.AppendLine("echo (c) 2018 Microsoft Corporation. All rights reserved.")
@@ -338,5 +352,41 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
 
     Private Sub RecentBtn_Click(sender As Object, e As EventArgs) Handles RecentBtn.Click
         Recent.Show()
+    End Sub
+
+    Private Sub HideBtn_Click(sender As Object, e As EventArgs) Handles HideBtn.Click
+        On Error Resume Next
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        objFolder.Attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+
+        For Each objFile In objFolder.files
+            objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+        Next
+
+        For Each objSFldr In objSubFolders
+            objSFldr.Attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            For Each objFile In objSFldr.files
+                objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            Next
+        Next
+    End Sub
+
+    Private Sub ShowBtn_Click(sender As Object, e As EventArgs) Handles ShowBtn.Click
+        On Error Resume Next
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        objFolder.Attributes = IO.FileAttributes.Normal
+
+        For Each objFile In objFolder.files
+            objFile.attributes = IO.FileAttributes.Normal
+        Next
+
+        For Each objSFldr In objSubFolders
+            objSFldr.Attributes = IO.FileAttributes.Normal
+            For Each objFile In objSFldr.files
+                objFile.attributes = IO.FileAttributes.Normal
+            Next
+        Next
     End Sub
 End Class
