@@ -37,7 +37,7 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Add MNSPlusTrasher update checker
 - Add an option to un-/lock all files in the home share
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
-- Add MacAddres scraper
+- Add MacAddress scraper
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
