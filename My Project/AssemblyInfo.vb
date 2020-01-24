@@ -13,7 +13,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("Microsoft")>
 <Assembly: AssemblyProduct("MNSTrasher")>
-<Assembly: AssemblyCopyright("Copyright © Bastian Oliver Schwickert 2019")>
+<Assembly: AssemblyCopyright("Copyright © Bastian Oliver Schwickert 2019 - 2020")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
