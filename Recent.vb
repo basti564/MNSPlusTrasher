@@ -10,11 +10,11 @@ Public Class Recent
         AccessTxt.Text = "Last Access: " + Directory.GetLastAccessTime(UserPath)
         fAccessTxt.Text = "First Login: " + Directory.GetCreationTime(UserPath)
         For Each folder In Directory.GetParent(UserPath).GetDirectories
-            UserList.Items.Add(folder)
+            'Don't show "Default" "Default User" "All Users" "Public" 
+            If Not folder.Name = "Default" And Not folder.Name = "Default User" And Not folder.Name = "Public" And Not folder.Name = "All Users" Then
+                UserList.Items.Add(folder)
+            End If
         Next
-        If Not UserList.SelectedItem Is Nothing Then
-            MsgBox("sees")
-        End If
     End Sub
 
     Private Sub UserList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles UserList.SelectedIndexChanged
