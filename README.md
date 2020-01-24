@@ -22,7 +22,7 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Simple Process Explorer
 - VolumeMixer
 - LSD Mode (Translucent color changing overlay)
-- Bypass for blocked CMD
+- Bypass for blocked CMD (with custom PATH extension)
 - Stop screen transmission to the Teacher (Blackout)
 - TeacherConsolePatcher (Makes TeacherConsole.exe execute without permissions by patching RoomMgr.dll)
 - CustomNetworkShareMapper
