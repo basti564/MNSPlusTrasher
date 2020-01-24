@@ -368,7 +368,9 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         objFolder.Attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
 
         For Each objFile In objFolder.files
-            objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            If Not objFile.Name.StartsWith("MNSPlusTrasher") Then
+                objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            End If
         Next
 
         For Each objSFldr In objSubFolders
