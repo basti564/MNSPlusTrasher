@@ -22,7 +22,7 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Simple Process Explorer
 - VolumeMixer
 - LSD Mode (Translucent color changing overlay)
-- Bypass for blocked CMD
+- Bypass for blocked CMD (with custom PATH extension)
 - Stop screen transmission to the Teacher (Blackout)
 - TeacherConsolePatcher (Makes TeacherConsole.exe execute without permissions by patching RoomMgr.dll)
 - CustomNetworkShareMapper
@@ -35,7 +35,9 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Hide and Show all folders & files in the home share
 ## TODO
 - Add MNSPlusTrasher update checker
+- Add an option to un-/lock all files in the home share
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
+- Add MacAddres scraper
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
