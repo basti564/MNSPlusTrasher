@@ -14,7 +14,7 @@ Public Class LSD
         Me.WindowState = FormWindowState.Maximized
 
         InitialStyle = GetWindowLong(Me.Handle, -20)
-        PercentVisible = 0.2
+        PercentVisible = 0.3
 
         SetWindowLong(Me.Handle, -20, InitialStyle Or &H80000 Or &H20)
 
