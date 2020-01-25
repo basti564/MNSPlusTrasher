@@ -45,4 +45,4 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
-![Main](https://user-images.githubusercontent.com/34898868/73040253-3034ce80-3e59-11ea-9645-4fcf2a5ec215.PNG)
+![Main](https://user-images.githubusercontent.com/34898868/73128445-d73b7680-3fcf-11ea-94fc-cb73bfb18b75.PNG)
