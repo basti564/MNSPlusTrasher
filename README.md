@@ -1,5 +1,8 @@
 # MNSPlusTrasher
-## Intro
+[![GitHub issues](https://img.shields.io/github/issues/basti564/MNSPlusTrasher?style=for-the-badge)](https://github.com/basti564/MNSPlusTrasher/issues)
+[![GitHub license](https://img.shields.io/github/license/basti564/MNSPlusTrasher?style=for-the-badge)](https://github.com/basti564/MNSPlusTrasher/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/basti564/MNSPlusTrasher?style=for-the-badge)](https://github.com/basti564/MNSPlusTrasher/stargazers)
+### The best and only MNS+ "hacktool" available
 MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is used by most [schools](http://mnsnet.de/db/) in Rhineland-Palatinate, Germany
 MNSPlusTrasher has been developed with MNS+ 2.0 and Windows 7/10 in mind, but mostly works on other versions too
 ## Explanation
