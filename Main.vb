@@ -408,6 +408,7 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
     End Sub
 
     Private Sub LockBtn_Click(sender As Object, e As EventArgs) Handles LockBtn.Click
+        On Error Resume Next
         Dim objFolder = objFSO.getFolder(PrivatHome)
         Dim objSubFolders = objFolder.subFolders
         Dim i As Integer = 1
@@ -415,23 +416,17 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
 
         For Each objFile In objFolder.files
             If Not objFile.Name.StartsWith("MNSPlusTrasher") Then
-                Try
-                    FileOpen(i, objFile.Path, OpenMode.Binary)
-                    Lock(i)
-                    i += 1
-                Catch ex As Exception
-                End Try
+                FileOpen(i, objFile.Path, OpenMode.Binary)
+                Lock(i)
+                i += 1
             End If
         Next
 
         For Each objSFldr In objSubFolders
             For Each objFile In objSFldr.files
-                Try
-                    FileOpen(i, objFile.Path, OpenMode.Binary)
-                    Lock(i)
-                    i += 1
-                Catch ex As Exception
-                End Try
+                FileOpen(i, objFile.Path, OpenMode.Binary)
+                Lock(i)
+                i += 1
             Next
         Next
     End Sub
