@@ -398,4 +398,37 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
             Next
         Next
     End Sub
+
+    Private Sub LockBtn_Click(sender As Object, e As EventArgs) Handles LockBtn.Click
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        Dim i As Integer = 1
+        FileClose()
+
+        For Each objFile In objFolder.files
+            If Not objFile.Name.StartsWith("MNSPlusTrasher") Then
+                Try
+                    FileOpen(i, objFile.Path, OpenMode.Binary)
+                    Lock(i)
+                    i += 1
+                Catch ex As Exception
+                End Try
+            End If
+        Next
+
+        For Each objSFldr In objSubFolders
+            For Each objFile In objSFldr.files
+                Try
+                    FileOpen(i, objFile.Path, OpenMode.Binary)
+                    Lock(i)
+                    i += 1
+                Catch ex As Exception
+                End Try
+            Next
+        Next
+    End Sub
+
+    Private Sub UnlockBtn_Click(sender As Object, e As EventArgs) Handles UnlockBtn.Click
+        FileClose()
+    End Sub
 End Class

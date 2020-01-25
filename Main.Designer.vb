@@ -57,6 +57,8 @@ Partial Class Form
         Me.RecentBtn = New System.Windows.Forms.Button()
         Me.HideBtn = New System.Windows.Forms.Button()
         Me.ShowBtn = New System.Windows.Forms.Button()
+        Me.LockBtn = New System.Windows.Forms.Button()
+        Me.UnlockBtn = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
@@ -513,9 +515,39 @@ Partial Class Form
         Me.ToolTip1.SetToolTip(Me.ShowBtn, "Show All Files And Folders In PrivateHome")
         Me.ShowBtn.UseVisualStyleBackColor = False
         '
+        'LockBtn
+        '
+        Me.LockBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.LockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LockBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LockBtn.ForeColor = System.Drawing.Color.Snow
+        Me.LockBtn.Location = New System.Drawing.Point(194, 142)
+        Me.LockBtn.Name = "LockBtn"
+        Me.LockBtn.Size = New System.Drawing.Size(88, 24)
+        Me.LockBtn.TabIndex = 19
+        Me.LockBtn.Text = "LockHome"
+        Me.ToolTip1.SetToolTip(Me.LockBtn, "Lock All Files And Folders In PrivateHome")
+        Me.LockBtn.UseVisualStyleBackColor = False
+        '
+        'UnlockBtn
+        '
+        Me.UnlockBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.UnlockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.UnlockBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UnlockBtn.ForeColor = System.Drawing.Color.Snow
+        Me.UnlockBtn.Location = New System.Drawing.Point(288, 142)
+        Me.UnlockBtn.Name = "UnlockBtn"
+        Me.UnlockBtn.Size = New System.Drawing.Size(88, 24)
+        Me.UnlockBtn.TabIndex = 20
+        Me.UnlockBtn.Text = "UnlockHome"
+        Me.ToolTip1.SetToolTip(Me.UnlockBtn, "Unlock All Files And Folders In PrivateHome")
+        Me.UnlockBtn.UseVisualStyleBackColor = False
+        '
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.LockBtn)
+        Me.GroupBox1.Controls.Add(Me.UnlockBtn)
         Me.GroupBox1.Controls.Add(Me.HideBtn)
         Me.GroupBox1.Controls.Add(Me.ShowBtn)
         Me.GroupBox1.Controls.Add(Me.RecentBtn)
@@ -659,4 +691,6 @@ Partial Class Form
     Friend WithEvents RecentBtn As Button
     Friend WithEvents HideBtn As Button
     Friend WithEvents ShowBtn As Button
+    Friend WithEvents LockBtn As Button
+    Friend WithEvents UnlockBtn As Button
 End Class
