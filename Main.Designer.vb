@@ -491,7 +491,7 @@ Partial Class Form
         Me.HideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.HideBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HideBtn.ForeColor = System.Drawing.Color.Snow
-        Me.HideBtn.Location = New System.Drawing.Point(12, 149)
+        Me.HideBtn.Location = New System.Drawing.Point(6, 142)
         Me.HideBtn.Name = "HideBtn"
         Me.HideBtn.Size = New System.Drawing.Size(88, 24)
         Me.HideBtn.TabIndex = 17
@@ -505,7 +505,7 @@ Partial Class Form
         Me.ShowBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.ShowBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ShowBtn.ForeColor = System.Drawing.Color.Snow
-        Me.ShowBtn.Location = New System.Drawing.Point(106, 149)
+        Me.ShowBtn.Location = New System.Drawing.Point(100, 142)
         Me.ShowBtn.Name = "ShowBtn"
         Me.ShowBtn.Size = New System.Drawing.Size(88, 24)
         Me.ShowBtn.TabIndex = 18
@@ -516,6 +516,8 @@ Partial Class Form
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.HideBtn)
+        Me.GroupBox1.Controls.Add(Me.ShowBtn)
         Me.GroupBox1.Controls.Add(Me.RecentBtn)
         Me.GroupBox1.Controls.Add(Me.CMD)
         Me.GroupBox1.Controls.Add(Me.BlackBtn)
@@ -536,7 +538,7 @@ Partial Class Form
         Me.GroupBox1.ForeColor = System.Drawing.Color.Teal
         Me.GroupBox1.Location = New System.Drawing.Point(6, 7)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(383, 143)
+        Me.GroupBox1.Size = New System.Drawing.Size(383, 173)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Tools"
@@ -557,7 +559,7 @@ Partial Class Form
         Me.GroupBox3.Controls.Add(Me.NameBox)
         Me.GroupBox3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 195)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 182)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(288, 105)
         Me.GroupBox3.TabIndex = 3
@@ -598,9 +600,7 @@ Partial Class Form
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
-        Me.ClientSize = New System.Drawing.Size(502, 304)
-        Me.Controls.Add(Me.HideBtn)
-        Me.Controls.Add(Me.ShowBtn)
+        Me.ClientSize = New System.Drawing.Size(502, 291)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
