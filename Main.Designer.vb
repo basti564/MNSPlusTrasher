@@ -63,9 +63,14 @@ Partial Class Form
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.UnlockPCBtn = New System.Windows.Forms.Button()
+        Me.ShutdownPCBtn = New System.Windows.Forms.Button()
+        Me.LockPCBtn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'RefreshBtn
@@ -626,6 +631,61 @@ Partial Class Form
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Shares"
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.UnlockPCBtn)
+        Me.GroupBox4.Controls.Add(Me.ShutdownPCBtn)
+        Me.GroupBox4.Controls.Add(Me.LockPCBtn)
+        Me.GroupBox4.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.Color.Teal
+        Me.GroupBox4.Location = New System.Drawing.Point(306, 186)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(195, 81)
+        Me.GroupBox4.TabIndex = 4
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Experimental"
+        '
+        'UnlockPCBtn
+        '
+        Me.UnlockPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.UnlockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.UnlockPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.UnlockPCBtn.ForeColor = System.Drawing.Color.Snow
+        Me.UnlockPCBtn.Location = New System.Drawing.Point(100, 22)
+        Me.UnlockPCBtn.Name = "UnlockPCBtn"
+        Me.UnlockPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.UnlockPCBtn.TabIndex = 2
+        Me.UnlockPCBtn.Text = "UnlockAll"
+        Me.UnlockPCBtn.UseVisualStyleBackColor = False
+        '
+        'ShutdownPCBtn
+        '
+        Me.ShutdownPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.ShutdownPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ShutdownPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ShutdownPCBtn.ForeColor = System.Drawing.Color.Snow
+        Me.ShutdownPCBtn.Location = New System.Drawing.Point(6, 52)
+        Me.ShutdownPCBtn.Name = "ShutdownPCBtn"
+        Me.ShutdownPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.ShutdownPCBtn.TabIndex = 3
+        Me.ShutdownPCBtn.Text = "ShutdownAll"
+        Me.ShutdownPCBtn.UseVisualStyleBackColor = False
+        '
+        'LockPCBtn
+        '
+        Me.LockPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.LockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LockPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LockPCBtn.ForeColor = System.Drawing.Color.Snow
+        Me.LockPCBtn.Location = New System.Drawing.Point(6, 22)
+        Me.LockPCBtn.Name = "LockPCBtn"
+        Me.LockPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.LockPCBtn.TabIndex = 1
+        Me.LockPCBtn.Text = "LockAll"
+        Me.LockPCBtn.UseVisualStyleBackColor = False
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -633,6 +693,7 @@ Partial Class Form
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
         Me.ClientSize = New System.Drawing.Size(502, 291)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox1)
@@ -651,6 +712,7 @@ Partial Class Form
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -693,4 +755,8 @@ Partial Class Form
     Friend WithEvents ShowBtn As Button
     Friend WithEvents LockBtn As Button
     Friend WithEvents UnlockBtn As Button
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents UnlockPCBtn As Button
+    Friend WithEvents ShutdownPCBtn As Button
+    Friend WithEvents LockPCBtn As Button
 End Class

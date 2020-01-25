@@ -415,6 +415,41 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         FileClose()
     End Sub
 
+    Private Sub LockPCBtn_Click(sender As Object, e As EventArgs) Handles LockPCBtn.Click
+        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
+        PatchRoomMgr()
+        Response = MsgBox("Do you really want to lock all computers in your room?", vbYesNo, "Lock Current Room")
+        If Response = vbYes Then
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/refreshlist")
+            Threading.Thread.Sleep(1000)
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/lockscreen")
+        End If
+    End Sub
+
+    Private Sub UnlockPCBtn_Click(sender As Object, e As EventArgs) Handles UnlockPCBtn.Click
+        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
+        PatchRoomMgr()
+        Response = MsgBox("Do you really want to unlock all computers in your room?", vbYesNo, "Unlock Current Room")
+        If Response = vbYes Then
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/refreshlist")
+            Threading.Thread.Sleep(1000)
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/unlock")
+        End If
+    End Sub
+
+    Private Sub ShutdownPCBtn_Click(sender As Object, e As EventArgs) Handles ShutdownPCBtn.Click
+        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
+        PatchRoomMgr()
+        Response = MsgBox("Do you really want to shutdown all computers in your room?", vbYesNo, "Shutdown Current Room")
+        If Response = vbYes Then
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/refreshlist")
+            Threading.Thread.Sleep(1000)
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/unlock")
+            Threading.Thread.Sleep(1000)
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\MNSInterface.exe", "/shutdown")
+        End If
+    End Sub
+
     Private Sub PatchTC_Click(sender As Object, e As EventArgs) Handles PatchTCBtn.Click
         Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
         PatchRoomMgr()
