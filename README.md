@@ -37,9 +37,9 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Grab IP from arbitrary PC by name (eg. 1-01 1 for RoomID and 01 for PCID)
 - Hide and Show all folders & files in the home share
 - Lock and Unlock all files in the home share
+- *Experimental* option which can lock/unlock/shutdown all computers in a room via MNSInterface
 ## TODO
 - Add MNSPlusTrasher update checker
-- Add an option to lock/unlock/shutdown all computers in a room via MNSInterface.exe
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add MacAddress scraper
 - Add documentation of the project and MNS+
