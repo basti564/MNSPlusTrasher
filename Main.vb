@@ -202,26 +202,6 @@ Public Class Form
         Process.Start("sndvol.exe")
     End Sub
 
-    Private Sub Tests_Click(sender As Object, e As EventArgs) Handles TestsBtn.Click
-        Dim FernsteuerungDir = My.Computer.FileSystem.SpecialDirectories.ProgramFiles + "\MNS Fernsteuerung.net"
-        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
-        If Not (objFSO.FolderExists(DesktopPath & "\MNS Fernsteuerung.net")) Then
-            Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory(DesktopPath & "\MNS Fernsteuerung.net")
-            If Silent.Checked = True Then
-                IO.File.SetAttributes(DesktopPath & "\MNS Fernsteuerung.net", IO.FileAttributes.Hidden Or
-                                  IO.FileAttributes.System)
-            End If
-        End If
-        On Error Resume Next
-        Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory(FernsteuerungDir, DesktopPath & "\MNS Fernsteuerung.net")
-        Microsoft.VisualBasic.FileIO.FileSystem.RenameFile(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", "RoomMgr.dll.orig")
-        Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", My.Resources.ResourceManager.GetObject("RoomMgr"), True)
-        Response = MsgBox("Run TeacherConsole.exe?", vbYesNo, "TCPatcher")
-        If Response = vbYes Then
-            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\TeacherConsole.exe")
-        End If
-    End Sub
-
     Private Sub PowerShell_Click(sender As Object, e As EventArgs) Handles PowerShell.Click
         Dim DesktopPath = wshShell.SpecialFolders("Desktop")
         Dim sb As New System.Text.StringBuilder
@@ -433,5 +413,30 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
 
     Private Sub UnlockBtn_Click(sender As Object, e As EventArgs) Handles UnlockBtn.Click
         FileClose()
+    End Sub
+
+    Private Sub PatchTC_Click(sender As Object, e As EventArgs) Handles PatchTCBtn.Click
+        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
+        PatchRoomMgr()
+        Response = MsgBox("Run TeacherConsole.exe?", vbYesNo, "TCPatcher")
+        If Response = vbYes Then
+            Process.Start(DesktopPath & "\MNS Fernsteuerung.net\TeacherConsole.exe")
+        End If
+    End Sub
+
+    Private Sub PatchRoomMgr()
+        Dim FernsteuerungDir = My.Computer.FileSystem.SpecialDirectories.ProgramFiles + "\MNS Fernsteuerung.net"
+        Dim DesktopPath = wshShell.SpecialFolders("Desktop"), Response
+        If Not (objFSO.FolderExists(DesktopPath & "\MNS Fernsteuerung.net")) Then
+            Microsoft.VisualBasic.FileIO.FileSystem.CreateDirectory(DesktopPath & "\MNS Fernsteuerung.net")
+            If Silent.Checked = True Then
+                IO.File.SetAttributes(DesktopPath & "\MNS Fernsteuerung.net", IO.FileAttributes.Hidden Or
+                                  IO.FileAttributes.System)
+            End If
+        End If
+        On Error Resume Next
+        Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory(FernsteuerungDir, DesktopPath & "\MNS Fernsteuerung.net")
+        Microsoft.VisualBasic.FileIO.FileSystem.RenameFile(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", "RoomMgr.dll.orig")
+        Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", My.Resources.ResourceManager.GetObject("RoomMgr"), True)
     End Sub
 End Class

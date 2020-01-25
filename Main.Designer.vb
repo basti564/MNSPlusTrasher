@@ -42,7 +42,7 @@ Partial Class Form
         Me.ProcessesBtn = New System.Windows.Forms.Button()
         Me.Links = New System.Windows.Forms.Button()
         Me.Volume = New System.Windows.Forms.Button()
-        Me.TestsBtn = New System.Windows.Forms.Button()
+        Me.PatchTCBtn = New System.Windows.Forms.Button()
         Me.PowerShell = New System.Windows.Forms.Button()
         Me.BlackBtn = New System.Windows.Forms.Button()
         Me.txtIP = New System.Windows.Forms.TextBox()
@@ -303,20 +303,20 @@ Partial Class Form
         Me.ToolTip1.SetToolTip(Me.Volume, "Opens Volume Mixer")
         Me.Volume.UseVisualStyleBackColor = False
         '
-        'TestsBtn
+        'PatchTCBtn
         '
-        Me.TestsBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.TestsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.TestsBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TestsBtn.ForeColor = System.Drawing.Color.Snow
-        Me.TestsBtn.Location = New System.Drawing.Point(288, 112)
-        Me.TestsBtn.Name = "TestsBtn"
-        Me.TestsBtn.Size = New System.Drawing.Size(88, 24)
-        Me.TestsBtn.TabIndex = 16
-        Me.TestsBtn.Text = "PatchTC"
-        Me.ToolTip1.SetToolTip(Me.TestsBtn, "Copys TeacherConsole To The Desktop And Patches RoomMgr.dll And Try To Execute TC" &
+        Me.PatchTCBtn.BackColor = System.Drawing.Color.LightSeaGreen
+        Me.PatchTCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.PatchTCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PatchTCBtn.ForeColor = System.Drawing.Color.Snow
+        Me.PatchTCBtn.Location = New System.Drawing.Point(288, 112)
+        Me.PatchTCBtn.Name = "PatchTCBtn"
+        Me.PatchTCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.PatchTCBtn.TabIndex = 16
+        Me.PatchTCBtn.Text = "PatchTC"
+        Me.ToolTip1.SetToolTip(Me.PatchTCBtn, "Copys TeacherConsole To The Desktop And Patches RoomMgr.dll And Try To Execute TC" &
         " Without Permissions")
-        Me.TestsBtn.UseVisualStyleBackColor = False
+        Me.PatchTCBtn.UseVisualStyleBackColor = False
         '
         'PowerShell
         '
@@ -554,7 +554,7 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.CMD)
         Me.GroupBox1.Controls.Add(Me.BlackBtn)
         Me.GroupBox1.Controls.Add(Me.LSDbtn)
-        Me.GroupBox1.Controls.Add(Me.TestsBtn)
+        Me.GroupBox1.Controls.Add(Me.PatchTCBtn)
         Me.GroupBox1.Controls.Add(Me.PowerShell)
         Me.GroupBox1.Controls.Add(Me.Volume)
         Me.GroupBox1.Controls.Add(Me.Links)
@@ -674,7 +674,7 @@ Partial Class Form
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Links As Button
     Friend WithEvents Volume As Button
-    Friend WithEvents TestsBtn As Button
+    Friend WithEvents PatchTCBtn As Button
     Friend WithEvents PowerShell As Button
     Friend WithEvents BlackBtn As Button
     Friend WithEvents btnIP As Button
