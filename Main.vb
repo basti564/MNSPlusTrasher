@@ -242,7 +242,11 @@ Public Class Form
 
     Private Sub BlackBtn_Click(sender As Object, e As EventArgs) Handles BlackBtn.Click
         If (Process.GetCurrentProcess().ProcessName = "TeacherConsole") Then
-            Black.Show()
+            If Black.IsHandleCreated Then
+                Black.Close()
+            Else
+                Black.Show()
+            End If
         Else
             If MsgBox("This Will End This Instance Of MNSPlusTrasher!
 Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
@@ -271,7 +275,11 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
     End Sub
 
     Private Sub LSDbtn_Click(sender As Object, e As EventArgs) Handles LSDbtn.Click
-        LSD.Show()
+        If LSD.IsHandleCreated Then
+            LSD.Close()
+        Else
+            LSD.Show()
+        End If
     End Sub
 
     Private Sub LstIP_SelectedIndexChanged(sender As Object, e As EventArgs) Handles LstIP.SelectedIndexChanged

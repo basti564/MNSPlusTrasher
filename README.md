@@ -40,6 +40,5 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Add MacAddress scraper
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
-- Make LSD and Blackout toggleable
 ## Screenshot
 ![Main](https://user-images.githubusercontent.com/34898868/73040253-3034ce80-3e59-11ea-9645-4fcf2a5ec215.PNG)
