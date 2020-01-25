@@ -33,12 +33,13 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Silent option for CMD Bypass, PowerShell, PatchTC and Blackout
 - Grab IP from arbitrary PC by name (eg. 1-01 1 for RoomID and 01 for PCID)
 - Hide and Show all folders & files in the home share
+- Lock and Unlock all files in the home share
 ## TODO
 - Add MNSPlusTrasher update checker
-- Add an option to un-/lock all files in the home share
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
 - Add MacAddress scraper
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
+- Make LSD and Blackout toggleable
 ## Screenshot
 ![Main](https://user-images.githubusercontent.com/34898868/73040253-3034ce80-3e59-11ea-9645-4fcf2a5ec215.PNG)
