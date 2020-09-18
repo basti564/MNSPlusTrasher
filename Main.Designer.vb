@@ -67,17 +67,24 @@ Partial Class Form
         Me.UnlockPCBtn = New System.Windows.Forms.Button()
         Me.ShutdownPCBtn = New System.Windows.Forms.Button()
         Me.LockPCBtn = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.CloseBtn = New System.Windows.Forms.Button()
-        Me.MinimizeBtn = New System.Windows.Forms.Button()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.TitleBar = New System.Windows.Forms.Panel()
         Me.Title = New System.Windows.Forms.Label()
+        Me.MinimizeBtn = New System.Windows.Forms.Button()
+        Me.CloseBtn = New System.Windows.Forms.Button()
+        Me.MainPanel = New System.Windows.Forms.Panel()
+        Me.Sidebar = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SharesBtn = New System.Windows.Forms.Button()
+        Me.DashboardBtn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.TitleBar.SuspendLayout()
+        Me.MainPanel.SuspendLayout()
+        Me.Sidebar.SuspendLayout()
         Me.Panel1.SuspendLayout()
-        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'RefreshBtn
@@ -100,11 +107,11 @@ Partial Class Form
         Me.lefty.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lefty.AutoSize = True
         Me.lefty.BackColor = System.Drawing.Color.Transparent
-        Me.lefty.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lefty.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lefty.ForeColor = System.Drawing.Color.Black
         Me.lefty.Location = New System.Drawing.Point(9, 20)
         Me.lefty.Name = "lefty"
-        Me.lefty.Size = New System.Drawing.Size(47, 19)
+        Me.lefty.Size = New System.Drawing.Size(54, 19)
         Me.lefty.TabIndex = 1
         Me.lefty.Text = "Lefty"
         Me.ToolTip1.SetToolTip(Me.lefty, "Let MNS+ Think You Are A Lefty (Swaps Mouse Buttons After Next Login)")
@@ -194,11 +201,11 @@ Partial Class Form
         Me.RoomTxt.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.RoomTxt.AutoSize = True
         Me.RoomTxt.BackColor = System.Drawing.Color.Transparent
-        Me.RoomTxt.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RoomTxt.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RoomTxt.ForeColor = System.Drawing.Color.Black
         Me.RoomTxt.Location = New System.Drawing.Point(100, 22)
         Me.RoomTxt.Name = "RoomTxt"
-        Me.RoomTxt.Size = New System.Drawing.Size(35, 15)
+        Me.RoomTxt.Size = New System.Drawing.Size(43, 15)
         Me.RoomTxt.TabIndex = 5
         Me.RoomTxt.Text = "Room:"
         Me.ToolTip1.SetToolTip(Me.RoomTxt, "Your /Un/ Spoofed Room (AD Link Broken)")
@@ -470,18 +477,16 @@ Partial Class Form
         '
         'Silent
         '
-        Me.Silent.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Silent.AutoSize = True
         Me.Silent.BackColor = System.Drawing.Color.Transparent
         Me.Silent.Checked = True
         Me.Silent.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Silent.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Silent.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Silent.ForeColor = System.Drawing.Color.Black
-        Me.Silent.Location = New System.Drawing.Point(197, 20)
+        Me.Silent.Location = New System.Drawing.Point(12, 1)
         Me.Silent.Name = "Silent"
-        Me.Silent.Size = New System.Drawing.Size(53, 19)
+        Me.Silent.Size = New System.Drawing.Size(93, 28)
         Me.Silent.TabIndex = 11
-        Me.Silent.Text = "Silent"
+        Me.Silent.Text = "                "
         Me.ToolTip1.SetToolTip(Me.Silent, "Hide Temporary Files")
         Me.Silent.UseVisualStyleBackColor = False
         '
@@ -580,7 +585,7 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.Shortcut)
         Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox1.Location = New System.Drawing.Point(11, 6)
+        Me.GroupBox1.Location = New System.Drawing.Point(114, 6)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(383, 173)
         Me.GroupBox1.TabIndex = 1
@@ -591,7 +596,6 @@ Partial Class Form
         '
         Me.GroupBox3.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox3.Controls.Add(Me.Silent)
         Me.GroupBox3.Controls.Add(Me.LstIP)
         Me.GroupBox3.Controls.Add(Me.btnIP)
         Me.GroupBox3.Controls.Add(Me.txtIP)
@@ -603,7 +607,7 @@ Partial Class Form
         Me.GroupBox3.Controls.Add(Me.NameBox)
         Me.GroupBox3.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 185)
+        Me.GroupBox3.Location = New System.Drawing.Point(115, 197)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(288, 105)
         Me.GroupBox3.TabIndex = 3
@@ -631,7 +635,7 @@ Partial Class Form
         Me.GroupBox2.Controls.Add(Me.MapPrivatHome)
         Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox2.Location = New System.Drawing.Point(400, 6)
+        Me.GroupBox2.Location = New System.Drawing.Point(503, 6)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(101, 173)
         Me.GroupBox2.TabIndex = 2
@@ -647,7 +651,7 @@ Partial Class Form
         Me.GroupBox4.Controls.Add(Me.LockPCBtn)
         Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox4.Location = New System.Drawing.Point(306, 189)
+        Me.GroupBox4.Location = New System.Drawing.Point(409, 201)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(195, 81)
         Me.GroupBox4.TabIndex = 4
@@ -693,57 +697,17 @@ Partial Class Form
         Me.LockPCBtn.Text = "LockAll"
         Me.LockPCBtn.UseVisualStyleBackColor = False
         '
-        'Panel1
+        'TitleBar
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Title)
-        Me.Panel1.Controls.Add(Me.MinimizeBtn)
-        Me.Panel1.Controls.Add(Me.CloseBtn)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(512, 27)
-        Me.Panel1.TabIndex = 5
-        '
-        'CloseBtn
-        '
-        Me.CloseBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(87, Byte), Integer))
-        Me.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right
-        Me.CloseBtn.FlatAppearance.BorderSize = 0
-        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CloseBtn.Location = New System.Drawing.Point(462, 0)
-        Me.CloseBtn.Name = "CloseBtn"
-        Me.CloseBtn.Size = New System.Drawing.Size(50, 27)
-        Me.CloseBtn.TabIndex = 0
-        Me.CloseBtn.TabStop = False
-        Me.CloseBtn.Text = "x"
-        Me.CloseBtn.UseVisualStyleBackColor = False
-        '
-        'MinimizeBtn
-        '
-        Me.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(2, Byte), Integer))
-        Me.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right
-        Me.MinimizeBtn.FlatAppearance.BorderSize = 0
-        Me.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MinimizeBtn.Location = New System.Drawing.Point(412, 0)
-        Me.MinimizeBtn.Name = "MinimizeBtn"
-        Me.MinimizeBtn.Size = New System.Drawing.Size(50, 27)
-        Me.MinimizeBtn.TabIndex = 1
-        Me.MinimizeBtn.TabStop = False
-        Me.MinimizeBtn.Text = "-"
-        Me.MinimizeBtn.UseVisualStyleBackColor = False
-        '
-        'Panel3
-        '
-        Me.Panel3.Controls.Add(Me.GroupBox2)
-        Me.Panel3.Controls.Add(Me.GroupBox1)
-        Me.Panel3.Controls.Add(Me.GroupBox3)
-        Me.Panel3.Controls.Add(Me.GroupBox4)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel3.Location = New System.Drawing.Point(0, 27)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(512, 300)
-        Me.Panel3.TabIndex = 7
+        Me.TitleBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.TitleBar.Controls.Add(Me.Title)
+        Me.TitleBar.Controls.Add(Me.MinimizeBtn)
+        Me.TitleBar.Controls.Add(Me.CloseBtn)
+        Me.TitleBar.Dock = System.Windows.Forms.DockStyle.Top
+        Me.TitleBar.Location = New System.Drawing.Point(0, 0)
+        Me.TitleBar.Name = "TitleBar"
+        Me.TitleBar.Size = New System.Drawing.Size(626, 27)
+        Me.TitleBar.TabIndex = 5
         '
         'Title
         '
@@ -756,15 +720,121 @@ Partial Class Form
         Me.Title.TabIndex = 2
         Me.Title.Text = "MNS+ Trasher @BOS 2020"
         '
+        'MinimizeBtn
+        '
+        Me.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.MinimizeBtn.FlatAppearance.BorderSize = 0
+        Me.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MinimizeBtn.Location = New System.Drawing.Point(526, 0)
+        Me.MinimizeBtn.Name = "MinimizeBtn"
+        Me.MinimizeBtn.Size = New System.Drawing.Size(50, 27)
+        Me.MinimizeBtn.TabIndex = 1
+        Me.MinimizeBtn.TabStop = False
+        Me.MinimizeBtn.Text = "-"
+        Me.MinimizeBtn.UseVisualStyleBackColor = False
+        '
+        'CloseBtn
+        '
+        Me.CloseBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.CloseBtn.FlatAppearance.BorderSize = 0
+        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CloseBtn.Location = New System.Drawing.Point(576, 0)
+        Me.CloseBtn.Name = "CloseBtn"
+        Me.CloseBtn.Size = New System.Drawing.Size(50, 27)
+        Me.CloseBtn.TabIndex = 0
+        Me.CloseBtn.TabStop = False
+        Me.CloseBtn.Text = "x"
+        Me.CloseBtn.UseVisualStyleBackColor = False
+        '
+        'MainPanel
+        '
+        Me.MainPanel.Controls.Add(Me.GroupBox2)
+        Me.MainPanel.Controls.Add(Me.GroupBox1)
+        Me.MainPanel.Controls.Add(Me.GroupBox3)
+        Me.MainPanel.Controls.Add(Me.GroupBox4)
+        Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.MainPanel.Location = New System.Drawing.Point(0, 27)
+        Me.MainPanel.Name = "MainPanel"
+        Me.MainPanel.Size = New System.Drawing.Size(626, 312)
+        Me.MainPanel.TabIndex = 7
+        '
+        'Sidebar
+        '
+        Me.Sidebar.BackColor = System.Drawing.Color.FromArgb(CType(CType(116, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(140, Byte), Integer))
+        Me.Sidebar.Controls.Add(Me.Panel1)
+        Me.Sidebar.Controls.Add(Me.SharesBtn)
+        Me.Sidebar.Controls.Add(Me.DashboardBtn)
+        Me.Sidebar.Dock = System.Windows.Forms.DockStyle.Left
+        Me.Sidebar.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Sidebar.Location = New System.Drawing.Point(0, 27)
+        Me.Sidebar.Name = "Sidebar"
+        Me.Sidebar.Size = New System.Drawing.Size(108, 312)
+        Me.Sidebar.TabIndex = 8
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.Silent)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 284)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(108, 28)
+        Me.Panel1.TabIndex = 12
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(30, 5)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(45, 18)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Silent"
+        '
+        'SharesBtn
+        '
+        Me.SharesBtn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.SharesBtn.FlatAppearance.BorderSize = 0
+        Me.SharesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.SharesBtn.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SharesBtn.Image = CType(resources.GetObject("SharesBtn.Image"), System.Drawing.Image)
+        Me.SharesBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.SharesBtn.Location = New System.Drawing.Point(0, 36)
+        Me.SharesBtn.Name = "SharesBtn"
+        Me.SharesBtn.Size = New System.Drawing.Size(108, 36)
+        Me.SharesBtn.TabIndex = 1
+        Me.SharesBtn.Text = " Shares"
+        Me.SharesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.SharesBtn.UseVisualStyleBackColor = True
+        '
+        'DashboardBtn
+        '
+        Me.DashboardBtn.Dock = System.Windows.Forms.DockStyle.Top
+        Me.DashboardBtn.FlatAppearance.BorderSize = 0
+        Me.DashboardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DashboardBtn.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DashboardBtn.Image = CType(resources.GetObject("DashboardBtn.Image"), System.Drawing.Image)
+        Me.DashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.DashboardBtn.Location = New System.Drawing.Point(0, 0)
+        Me.DashboardBtn.Name = "DashboardBtn"
+        Me.DashboardBtn.Size = New System.Drawing.Size(108, 36)
+        Me.DashboardBtn.TabIndex = 0
+        Me.DashboardBtn.Text = " Dashbord"
+        Me.DashboardBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.DashboardBtn.UseVisualStyleBackColor = True
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(164, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(190, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(512, 327)
+        Me.ClientSize = New System.Drawing.Size(626, 339)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Sidebar)
+        Me.Controls.Add(Me.MainPanel)
+        Me.Controls.Add(Me.TitleBar)
         Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -781,9 +851,12 @@ Partial Class Form
         Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.TitleBar.ResumeLayout(False)
+        Me.TitleBar.PerformLayout()
+        Me.MainPanel.ResumeLayout(False)
+        Me.Sidebar.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -830,9 +903,14 @@ Partial Class Form
     Friend WithEvents UnlockPCBtn As Button
     Friend WithEvents ShutdownPCBtn As Button
     Friend WithEvents LockPCBtn As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents TitleBar As Panel
     Friend WithEvents MinimizeBtn As Button
     Friend WithEvents CloseBtn As Button
-    Friend WithEvents Panel3 As Panel
+    Friend WithEvents MainPanel As Panel
     Friend WithEvents Title As Label
+    Friend WithEvents DashboardBtn As Button
+    Friend WithEvents Sidebar As Panel
+    Private WithEvents SharesBtn As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Label1 As Label
 End Class

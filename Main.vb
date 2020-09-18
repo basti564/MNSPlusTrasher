@@ -1,7 +1,6 @@
 ﻿Imports System.Net
 
 Public Class Form
-
     Public Sub RunCommandCom(arguments As String)
         Dim p As Process = New Process()
         Dim pi As ProcessStartInfo = New ProcessStartInfo()
@@ -481,5 +480,18 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
 
     Private Sub MinimizeBtn_Click(sender As Object, e As EventArgs) Handles MinimizeBtn.Click
         Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub DashboardBtn_Click(sender As Object, e As EventArgs) Handles DashboardBtn.Click
+        Shares.Close()
+    End Sub
+
+    Private Sub SharesBtn_Click(sender As Object, e As EventArgs) Handles SharesBtn.Click
+        With Shares
+            .TopLevel = False
+            MainPanel.Controls.Add(Shares)
+            .BringToFront()
+            .Show()
+        End With
     End Sub
 End Class
