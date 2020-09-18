@@ -13,8 +13,7 @@ Public Class Form
     Dim wshShell = CreateObject("WScript.Shell")
     Dim objnet = CreateObject("WScript.Network")
     Dim objFSO = CreateObject("Scripting.FileSystemObject")
-    Dim realUser = objnet.UserName
-    Dim user = realUser
+    Dim user = objnet.UserName
 
     'Active Directory
 
@@ -107,21 +106,10 @@ Public Class Form
         Else
             lefty.Checked = False
         End If
-        NameBox.Text = user
     End Sub
 
     Private Sub delTemp_Click(sender As Object, e As EventArgs) Handles msgBtn.Click
         MSG.Show()
-    End Sub
-
-    Private Sub Refresh_Click(sender As Object, e As EventArgs) Handles RefreshBtn.Click
-        user = NameBox.Text
-
-        If objFSO.FileExists(PrivatHome & "\links.txt") Then
-            lefty.Checked = True
-        Else
-            lefty.Checked = False
-        End If
     End Sub
 
     Private Sub Spoof_Click(sender As Object, e As EventArgs) Handles Spoof.Click
@@ -279,10 +267,6 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         Else
             objnet.MapNetworkDrive("H:", PrivatHome, False)
         End If
-    End Sub
-
-    Private Sub More_Click(sender As Object, e As EventArgs) Handles More.Click
-        Shares.Show()
     End Sub
 
     Private Sub FindBtn_Click(sender As Object, e As EventArgs) Handles FindBtn.Click
