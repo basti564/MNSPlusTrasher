@@ -82,7 +82,7 @@ Partial Class Form
         Me.RefreshBtn.ForeColor = System.Drawing.Color.Black
         Me.RefreshBtn.Location = New System.Drawing.Point(9, 76)
         Me.RefreshBtn.Name = "RefreshBtn"
-        Me.RefreshBtn.Size = New System.Drawing.Size(88, 24)
+        Me.RefreshBtn.Size = New System.Drawing.Size(87, 24)
         Me.RefreshBtn.TabIndex = 4
         Me.RefreshBtn.Text = "Refresh"
         Me.ToolTip1.SetToolTip(Me.RefreshBtn, "Refreshes Status And User Settings")
@@ -95,7 +95,7 @@ Partial Class Form
         Me.lefty.BackColor = System.Drawing.Color.Transparent
         Me.lefty.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lefty.ForeColor = System.Drawing.Color.Black
-        Me.lefty.Location = New System.Drawing.Point(9, 21)
+        Me.lefty.Location = New System.Drawing.Point(9, 20)
         Me.lefty.Name = "lefty"
         Me.lefty.Size = New System.Drawing.Size(47, 19)
         Me.lefty.TabIndex = 1
@@ -111,7 +111,7 @@ Partial Class Form
         Me.msgBtn.ForeColor = System.Drawing.Color.Snow
         Me.msgBtn.Location = New System.Drawing.Point(6, 22)
         Me.msgBtn.Name = "msgBtn"
-        Me.msgBtn.Size = New System.Drawing.Size(88, 24)
+        Me.msgBtn.Size = New System.Drawing.Size(87, 24)
         Me.msgBtn.TabIndex = 1
         Me.msgBtn.Text = "AWBMsg"
         Me.ToolTip1.SetToolTip(Me.msgBtn, "Send Spoofed Messages To The AWB (Requires Permissions To Write To T:\Admin)")
@@ -137,7 +137,7 @@ Partial Class Form
         Me.Spoof.ForeColor = System.Drawing.Color.Black
         Me.Spoof.Location = New System.Drawing.Point(103, 76)
         Me.Spoof.Name = "Spoof"
-        Me.Spoof.Size = New System.Drawing.Size(88, 24)
+        Me.Spoof.Size = New System.Drawing.Size(87, 24)
         Me.Spoof.TabIndex = 7
         Me.Spoof.Text = "SpoofRoom"
         Me.ToolTip1.SetToolTip(Me.Spoof, "Spoof Room Shares (A:)")
@@ -162,7 +162,7 @@ Partial Class Form
         Me.WebAnwendung.ForeColor = System.Drawing.Color.Snow
         Me.WebAnwendung.Location = New System.Drawing.Point(194, 22)
         Me.WebAnwendung.Name = "WebAnwendung"
-        Me.WebAnwendung.Size = New System.Drawing.Size(88, 24)
+        Me.WebAnwendung.Size = New System.Drawing.Size(87, 24)
         Me.WebAnwendung.TabIndex = 3
         Me.WebAnwendung.Text = "MNS+ v2"
         Me.ToolTip1.SetToolTip(Me.WebAnwendung, "Opens MNS+ v2 In The Browser (Old)")
@@ -176,7 +176,7 @@ Partial Class Form
         Me.Support.ForeColor = System.Drawing.Color.Snow
         Me.Support.Location = New System.Drawing.Point(6, 52)
         Me.Support.Name = "Support"
-        Me.Support.Size = New System.Drawing.Size(88, 24)
+        Me.Support.Size = New System.Drawing.Size(87, 24)
         Me.Support.TabIndex = 5
         Me.Support.Text = "Support"
         Me.ToolTip1.SetToolTip(Me.Support, "Opens MNS+ Support (Default Password PLZ)")
@@ -204,7 +204,7 @@ Partial Class Form
         Me.Shortcut.ForeColor = System.Drawing.Color.Snow
         Me.Shortcut.Location = New System.Drawing.Point(288, 52)
         Me.Shortcut.Name = "Shortcut"
-        Me.Shortcut.Size = New System.Drawing.Size(88, 24)
+        Me.Shortcut.Size = New System.Drawing.Size(87, 24)
         Me.Shortcut.TabIndex = 8
         Me.Shortcut.Text = "Shortcut"
         Me.ToolTip1.SetToolTip(Me.Shortcut, "Adds MNS+ v2 And MNS+ Support To The Desktop")
@@ -218,7 +218,7 @@ Partial Class Form
         Me.WebLogs.ForeColor = System.Drawing.Color.Snow
         Me.WebLogs.Location = New System.Drawing.Point(100, 22)
         Me.WebLogs.Name = "WebLogs"
-        Me.WebLogs.Size = New System.Drawing.Size(88, 24)
+        Me.WebLogs.Size = New System.Drawing.Size(87, 24)
         Me.WebLogs.TabIndex = 2
         Me.WebLogs.Text = "WebLogs"
         Me.ToolTip1.SetToolTip(Me.WebLogs, "Opens WebLogs In The Browser (Requires Permissions)")
@@ -232,7 +232,7 @@ Partial Class Form
         Me.Wall.ForeColor = System.Drawing.Color.Snow
         Me.Wall.Location = New System.Drawing.Point(194, 52)
         Me.Wall.Name = "Wall"
-        Me.Wall.Size = New System.Drawing.Size(88, 24)
+        Me.Wall.Size = New System.Drawing.Size(87, 24)
         Me.Wall.TabIndex = 7
         Me.Wall.Text = "Wallpaper"
         Me.ToolTip1.SetToolTip(Me.Wall, "Change The Wallpaper")
@@ -246,7 +246,7 @@ Partial Class Form
         Me.MapCustom.ForeColor = System.Drawing.Color.Snow
         Me.MapCustom.Location = New System.Drawing.Point(6, 82)
         Me.MapCustom.Name = "MapCustom"
-        Me.MapCustom.Size = New System.Drawing.Size(88, 24)
+        Me.MapCustom.Size = New System.Drawing.Size(87, 24)
         Me.MapCustom.TabIndex = 3
         Me.MapCustom.Text = "CustomDrive"
         Me.ToolTip1.SetToolTip(Me.MapCustom, "Map / UnMap Custom Network Drive")
@@ -260,7 +260,7 @@ Partial Class Form
         Me.TrayIcon.ForeColor = System.Drawing.Color.Snow
         Me.TrayIcon.Location = New System.Drawing.Point(6, 82)
         Me.TrayIcon.Name = "TrayIcon"
-        Me.TrayIcon.Size = New System.Drawing.Size(88, 24)
+        Me.TrayIcon.Size = New System.Drawing.Size(87, 24)
         Me.TrayIcon.TabIndex = 9
         Me.TrayIcon.Text = "TrayIcon"
         Me.ToolTip1.SetToolTip(Me.TrayIcon, "Add /Another/ Monitoring Indicator To The Tray")
@@ -274,7 +274,7 @@ Partial Class Form
         Me.ProcessesBtn.ForeColor = System.Drawing.Color.Snow
         Me.ProcessesBtn.Location = New System.Drawing.Point(100, 82)
         Me.ProcessesBtn.Name = "ProcessesBtn"
-        Me.ProcessesBtn.Size = New System.Drawing.Size(88, 24)
+        Me.ProcessesBtn.Size = New System.Drawing.Size(87, 24)
         Me.ProcessesBtn.TabIndex = 10
         Me.ProcessesBtn.Text = "Processes"
         Me.ToolTip1.SetToolTip(Me.ProcessesBtn, "Manipulate Processes")
@@ -288,7 +288,7 @@ Partial Class Form
         Me.Links.ForeColor = System.Drawing.Color.Snow
         Me.Links.Location = New System.Drawing.Point(194, 82)
         Me.Links.Name = "Links"
-        Me.Links.Size = New System.Drawing.Size(88, 24)
+        Me.Links.Size = New System.Drawing.Size(87, 24)
         Me.Links.TabIndex = 11
         Me.Links.Text = "LegacyLinks"
         Me.ToolTip1.SetToolTip(Me.Links, "Mostly Broken Links")
@@ -302,7 +302,7 @@ Partial Class Form
         Me.Volume.ForeColor = System.Drawing.Color.Snow
         Me.Volume.Location = New System.Drawing.Point(288, 82)
         Me.Volume.Name = "Volume"
-        Me.Volume.Size = New System.Drawing.Size(88, 24)
+        Me.Volume.Size = New System.Drawing.Size(87, 24)
         Me.Volume.TabIndex = 12
         Me.Volume.Text = "VolumeMix"
         Me.ToolTip1.SetToolTip(Me.Volume, "Opens Volume Mixer")
@@ -316,7 +316,7 @@ Partial Class Form
         Me.PatchTCBtn.ForeColor = System.Drawing.Color.Snow
         Me.PatchTCBtn.Location = New System.Drawing.Point(288, 112)
         Me.PatchTCBtn.Name = "PatchTCBtn"
-        Me.PatchTCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.PatchTCBtn.Size = New System.Drawing.Size(87, 24)
         Me.PatchTCBtn.TabIndex = 16
         Me.PatchTCBtn.Text = "PatchTC"
         Me.ToolTip1.SetToolTip(Me.PatchTCBtn, "Copys TeacherConsole To The Desktop And Patches RoomMgr.dll And Try To Execute TC" &
@@ -331,7 +331,7 @@ Partial Class Form
         Me.PowerShell.ForeColor = System.Drawing.Color.Snow
         Me.PowerShell.Location = New System.Drawing.Point(100, 52)
         Me.PowerShell.Name = "PowerShell"
-        Me.PowerShell.Size = New System.Drawing.Size(88, 24)
+        Me.PowerShell.Size = New System.Drawing.Size(87, 24)
         Me.PowerShell.TabIndex = 6
         Me.PowerShell.Text = "PowerSH"
         Me.ToolTip1.SetToolTip(Me.PowerShell, "Opens PowerShell (Might Be Blocked)")
@@ -345,7 +345,7 @@ Partial Class Form
         Me.BlackBtn.ForeColor = System.Drawing.Color.Snow
         Me.BlackBtn.Location = New System.Drawing.Point(194, 112)
         Me.BlackBtn.Name = "BlackBtn"
-        Me.BlackBtn.Size = New System.Drawing.Size(88, 24)
+        Me.BlackBtn.Size = New System.Drawing.Size(87, 24)
         Me.BlackBtn.TabIndex = 15
         Me.BlackBtn.Text = "Blackout"
         Me.ToolTip1.SetToolTip(Me.BlackBtn, "Blackout Screen On TeacherConsole")
@@ -369,7 +369,7 @@ Partial Class Form
         Me.btnIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnIP.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIP.ForeColor = System.Drawing.Color.Black
-        Me.btnIP.Location = New System.Drawing.Point(242, 76)
+        Me.btnIP.Location = New System.Drawing.Point(241, 76)
         Me.btnIP.Name = "btnIP"
         Me.btnIP.Size = New System.Drawing.Size(40, 24)
         Me.btnIP.TabIndex = 9
@@ -385,7 +385,7 @@ Partial Class Form
         Me.LSDbtn.ForeColor = System.Drawing.Color.Snow
         Me.LSDbtn.Location = New System.Drawing.Point(6, 112)
         Me.LSDbtn.Name = "LSDbtn"
-        Me.LSDbtn.Size = New System.Drawing.Size(88, 24)
+        Me.LSDbtn.Size = New System.Drawing.Size(87, 24)
         Me.LSDbtn.TabIndex = 13
         Me.LSDbtn.Text = "LSD"
         Me.ToolTip1.SetToolTip(Me.LSDbtn, "Overlay Color Changing Form")
@@ -399,7 +399,7 @@ Partial Class Form
         Me.MapPublicLehrer.ForeColor = System.Drawing.Color.Snow
         Me.MapPublicLehrer.Location = New System.Drawing.Point(6, 22)
         Me.MapPublicLehrer.Name = "MapPublicLehrer"
-        Me.MapPublicLehrer.Size = New System.Drawing.Size(88, 24)
+        Me.MapPublicLehrer.Size = New System.Drawing.Size(87, 24)
         Me.MapPublicLehrer.TabIndex = 1
         Me.MapPublicLehrer.Text = "PublicLehrer"
         Me.ToolTip1.SetToolTip(Me.MapPublicLehrer, "Public Homeshare Lehrer (If Not Set In Settings)")
@@ -413,7 +413,7 @@ Partial Class Form
         Me.MapPrivatHome.ForeColor = System.Drawing.Color.Snow
         Me.MapPrivatHome.Location = New System.Drawing.Point(6, 52)
         Me.MapPrivatHome.Name = "MapPrivatHome"
-        Me.MapPrivatHome.Size = New System.Drawing.Size(88, 24)
+        Me.MapPrivatHome.Size = New System.Drawing.Size(87, 24)
         Me.MapPrivatHome.TabIndex = 2
         Me.MapPrivatHome.Text = "PrivatHome"
         Me.ToolTip1.SetToolTip(Me.MapPrivatHome, "Privat Homeshare (If Not Set In Settings)")
@@ -427,7 +427,7 @@ Partial Class Form
         Me.More.ForeColor = System.Drawing.Color.Snow
         Me.More.Location = New System.Drawing.Point(6, 142)
         Me.More.Name = "More"
-        Me.More.Size = New System.Drawing.Size(88, 24)
+        Me.More.Size = New System.Drawing.Size(87, 24)
         Me.More.TabIndex = 5
         Me.More.Text = "More"
         Me.ToolTip1.SetToolTip(Me.More, "Show Other Shares That Mostly Require Permissions")
@@ -441,7 +441,7 @@ Partial Class Form
         Me.FindBtn.ForeColor = System.Drawing.Color.Snow
         Me.FindBtn.Location = New System.Drawing.Point(6, 112)
         Me.FindBtn.Name = "FindBtn"
-        Me.FindBtn.Size = New System.Drawing.Size(88, 24)
+        Me.FindBtn.Size = New System.Drawing.Size(87, 24)
         Me.FindBtn.TabIndex = 4
         Me.FindBtn.Text = "Find"
         Me.ToolTip1.SetToolTip(Me.FindBtn, "Find /Hidden/ Shares")
@@ -455,7 +455,7 @@ Partial Class Form
         Me.CMD.ForeColor = System.Drawing.Color.Snow
         Me.CMD.Location = New System.Drawing.Point(100, 112)
         Me.CMD.Name = "CMD"
-        Me.CMD.Size = New System.Drawing.Size(88, 24)
+        Me.CMD.Size = New System.Drawing.Size(87, 24)
         Me.CMD.TabIndex = 14
         Me.CMD.Text = "CMD"
         Me.ToolTip1.SetToolTip(Me.CMD, "Opens CMD (Even When Blocked)")
@@ -470,7 +470,7 @@ Partial Class Form
         Me.Silent.CheckState = System.Windows.Forms.CheckState.Checked
         Me.Silent.Font = New System.Drawing.Font("Impact", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Silent.ForeColor = System.Drawing.Color.Black
-        Me.Silent.Location = New System.Drawing.Point(197, 21)
+        Me.Silent.Location = New System.Drawing.Point(197, 20)
         Me.Silent.Name = "Silent"
         Me.Silent.Size = New System.Drawing.Size(53, 19)
         Me.Silent.TabIndex = 11
@@ -486,7 +486,7 @@ Partial Class Form
         Me.RecentBtn.ForeColor = System.Drawing.Color.Snow
         Me.RecentBtn.Location = New System.Drawing.Point(288, 22)
         Me.RecentBtn.Name = "RecentBtn"
-        Me.RecentBtn.Size = New System.Drawing.Size(88, 24)
+        Me.RecentBtn.Size = New System.Drawing.Size(87, 24)
         Me.RecentBtn.TabIndex = 4
         Me.RecentBtn.Text = "Recent"
         Me.ToolTip1.SetToolTip(Me.RecentBtn, "Lists Recent Users Logged Into The Local PC")
@@ -500,7 +500,7 @@ Partial Class Form
         Me.HideBtn.ForeColor = System.Drawing.Color.Snow
         Me.HideBtn.Location = New System.Drawing.Point(6, 142)
         Me.HideBtn.Name = "HideBtn"
-        Me.HideBtn.Size = New System.Drawing.Size(88, 24)
+        Me.HideBtn.Size = New System.Drawing.Size(87, 24)
         Me.HideBtn.TabIndex = 17
         Me.HideBtn.Text = "HideHome"
         Me.ToolTip1.SetToolTip(Me.HideBtn, "Hide All Files And Folders In PrivateHome")
@@ -514,7 +514,7 @@ Partial Class Form
         Me.ShowBtn.ForeColor = System.Drawing.Color.Snow
         Me.ShowBtn.Location = New System.Drawing.Point(100, 142)
         Me.ShowBtn.Name = "ShowBtn"
-        Me.ShowBtn.Size = New System.Drawing.Size(88, 24)
+        Me.ShowBtn.Size = New System.Drawing.Size(87, 24)
         Me.ShowBtn.TabIndex = 18
         Me.ShowBtn.Text = "ShowHome"
         Me.ToolTip1.SetToolTip(Me.ShowBtn, "Show All Files And Folders In PrivateHome")
@@ -528,7 +528,7 @@ Partial Class Form
         Me.LockBtn.ForeColor = System.Drawing.Color.Snow
         Me.LockBtn.Location = New System.Drawing.Point(194, 142)
         Me.LockBtn.Name = "LockBtn"
-        Me.LockBtn.Size = New System.Drawing.Size(88, 24)
+        Me.LockBtn.Size = New System.Drawing.Size(87, 24)
         Me.LockBtn.TabIndex = 19
         Me.LockBtn.Text = "LockHome"
         Me.ToolTip1.SetToolTip(Me.LockBtn, "Lock All Files And Folders In PrivateHome")
@@ -542,7 +542,7 @@ Partial Class Form
         Me.UnlockBtn.ForeColor = System.Drawing.Color.Snow
         Me.UnlockBtn.Location = New System.Drawing.Point(288, 142)
         Me.UnlockBtn.Name = "UnlockBtn"
-        Me.UnlockBtn.Size = New System.Drawing.Size(88, 24)
+        Me.UnlockBtn.Size = New System.Drawing.Size(87, 24)
         Me.UnlockBtn.TabIndex = 20
         Me.UnlockBtn.Text = "UnlockHome"
         Me.ToolTip1.SetToolTip(Me.UnlockBtn, "Unlock All Files And Folders In PrivateHome")
@@ -609,9 +609,9 @@ Partial Class Form
         Me.LstIP.FormattingEnabled = True
         Me.LstIP.ItemHeight = 15
         Me.LstIP.Items.AddRange(New Object() {"IP"})
-        Me.LstIP.Location = New System.Drawing.Point(197, 49)
+        Me.LstIP.Location = New System.Drawing.Point(197, 48)
         Me.LstIP.Name = "LstIP"
-        Me.LstIP.Size = New System.Drawing.Size(85, 19)
+        Me.LstIP.Size = New System.Drawing.Size(84, 15)
         Me.LstIP.TabIndex = 10
         '
         'GroupBox2
@@ -655,7 +655,7 @@ Partial Class Form
         Me.UnlockPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.UnlockPCBtn.Location = New System.Drawing.Point(100, 22)
         Me.UnlockPCBtn.Name = "UnlockPCBtn"
-        Me.UnlockPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.UnlockPCBtn.Size = New System.Drawing.Size(87, 24)
         Me.UnlockPCBtn.TabIndex = 2
         Me.UnlockPCBtn.Text = "UnlockAll"
         Me.UnlockPCBtn.UseVisualStyleBackColor = False
@@ -668,7 +668,7 @@ Partial Class Form
         Me.ShutdownPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.ShutdownPCBtn.Location = New System.Drawing.Point(6, 52)
         Me.ShutdownPCBtn.Name = "ShutdownPCBtn"
-        Me.ShutdownPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.ShutdownPCBtn.Size = New System.Drawing.Size(87, 24)
         Me.ShutdownPCBtn.TabIndex = 3
         Me.ShutdownPCBtn.Text = "ShutdownAll"
         Me.ShutdownPCBtn.UseVisualStyleBackColor = False
@@ -681,7 +681,7 @@ Partial Class Form
         Me.LockPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.LockPCBtn.Location = New System.Drawing.Point(6, 22)
         Me.LockPCBtn.Name = "LockPCBtn"
-        Me.LockPCBtn.Size = New System.Drawing.Size(88, 24)
+        Me.LockPCBtn.Size = New System.Drawing.Size(87, 24)
         Me.LockPCBtn.TabIndex = 1
         Me.LockPCBtn.Text = "LockAll"
         Me.LockPCBtn.UseVisualStyleBackColor = False
@@ -699,7 +699,7 @@ Partial Class Form
         Me.Controls.Add(Me.GroupBox1)
         Me.Cursor = System.Windows.Forms.Cursors.Cross
         Me.DoubleBuffered = True
-        Me.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
