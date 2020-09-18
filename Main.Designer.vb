@@ -611,7 +611,7 @@ Partial Class Form
         Me.LstIP.Items.AddRange(New Object() {"IP"})
         Me.LstIP.Location = New System.Drawing.Point(197, 48)
         Me.LstIP.Name = "LstIP"
-        Me.LstIP.Size = New System.Drawing.Size(84, 15)
+        Me.LstIP.Size = New System.Drawing.Size(84, 19)
         Me.LstIP.TabIndex = 10
         '
         'GroupBox2
@@ -693,6 +693,7 @@ Partial Class Form
         Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
         Me.ClientSize = New System.Drawing.Size(502, 291)
+        Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox3)
@@ -706,7 +707,6 @@ Partial Class Form
         Me.MaximizeBox = False
         Me.Name = "Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "MNS+ Trasher 1.9.6 ©BOS 2020"
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
