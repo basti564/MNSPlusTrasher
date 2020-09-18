@@ -102,7 +102,7 @@ Public Class Form
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see 
     <https://www.gnu.org/licenses/>.", vbOKOnly, "MNSPlusTrasher")
-            End If
+        End If
         If objFSO.FileExists(PrivatHome & "\links.txt") Then
             lefty.Checked = True
         Else
@@ -473,5 +473,13 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         Microsoft.VisualBasic.FileIO.FileSystem.CopyDirectory(FernsteuerungDir, DesktopPath & "\MNS Fernsteuerung.net")
         Microsoft.VisualBasic.FileIO.FileSystem.RenameFile(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", "RoomMgr.dll.orig")
         Microsoft.VisualBasic.FileIO.FileSystem.WriteAllBytes(DesktopPath & "\MNS Fernsteuerung.net\RoomMgr.dll", My.Resources.ResourceManager.GetObject("RoomMgr"), True)
+    End Sub
+
+    Private Sub CloseBtn_Click(sender As Object, e As EventArgs) Handles CloseBtn.Click
+        Close()
+    End Sub
+
+    Private Sub MinimizeBtn_Click(sender As Object, e As EventArgs) Handles MinimizeBtn.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

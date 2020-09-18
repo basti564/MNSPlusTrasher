@@ -67,10 +67,17 @@ Partial Class Form
         Me.UnlockPCBtn = New System.Windows.Forms.Button()
         Me.ShutdownPCBtn = New System.Windows.Forms.Button()
         Me.LockPCBtn = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.CloseBtn = New System.Windows.Forms.Button()
+        Me.MinimizeBtn = New System.Windows.Forms.Button()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Title = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'RefreshBtn
@@ -105,8 +112,8 @@ Partial Class Form
         '
         'msgBtn
         '
-        Me.msgBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.msgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.msgBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.msgBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.msgBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.msgBtn.ForeColor = System.Drawing.Color.Snow
         Me.msgBtn.Location = New System.Drawing.Point(6, 22)
@@ -156,8 +163,8 @@ Partial Class Form
         '
         'WebAnwendung
         '
-        Me.WebAnwendung.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.WebAnwendung.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.WebAnwendung.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.WebAnwendung.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.WebAnwendung.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WebAnwendung.ForeColor = System.Drawing.Color.Snow
         Me.WebAnwendung.Location = New System.Drawing.Point(194, 22)
@@ -170,8 +177,8 @@ Partial Class Form
         '
         'Support
         '
-        Me.Support.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Support.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Support.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Support.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Support.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Support.ForeColor = System.Drawing.Color.Snow
         Me.Support.Location = New System.Drawing.Point(6, 52)
@@ -198,8 +205,8 @@ Partial Class Form
         '
         'Shortcut
         '
-        Me.Shortcut.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Shortcut.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Shortcut.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Shortcut.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Shortcut.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Shortcut.ForeColor = System.Drawing.Color.Snow
         Me.Shortcut.Location = New System.Drawing.Point(288, 52)
@@ -212,8 +219,8 @@ Partial Class Form
         '
         'WebLogs
         '
-        Me.WebLogs.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.WebLogs.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.WebLogs.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.WebLogs.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.WebLogs.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WebLogs.ForeColor = System.Drawing.Color.Snow
         Me.WebLogs.Location = New System.Drawing.Point(100, 22)
@@ -226,8 +233,8 @@ Partial Class Form
         '
         'Wall
         '
-        Me.Wall.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Wall.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Wall.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Wall.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Wall.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Wall.ForeColor = System.Drawing.Color.Snow
         Me.Wall.Location = New System.Drawing.Point(194, 52)
@@ -240,8 +247,8 @@ Partial Class Form
         '
         'MapCustom
         '
-        Me.MapCustom.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.MapCustom.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MapCustom.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.MapCustom.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MapCustom.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MapCustom.ForeColor = System.Drawing.Color.Snow
         Me.MapCustom.Location = New System.Drawing.Point(6, 82)
@@ -254,8 +261,8 @@ Partial Class Form
         '
         'TrayIcon
         '
-        Me.TrayIcon.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.TrayIcon.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.TrayIcon.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.TrayIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.TrayIcon.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TrayIcon.ForeColor = System.Drawing.Color.Snow
         Me.TrayIcon.Location = New System.Drawing.Point(6, 82)
@@ -268,8 +275,8 @@ Partial Class Form
         '
         'ProcessesBtn
         '
-        Me.ProcessesBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.ProcessesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ProcessesBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.ProcessesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ProcessesBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ProcessesBtn.ForeColor = System.Drawing.Color.Snow
         Me.ProcessesBtn.Location = New System.Drawing.Point(100, 82)
@@ -282,8 +289,8 @@ Partial Class Form
         '
         'Links
         '
-        Me.Links.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Links.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Links.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Links.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Links.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Links.ForeColor = System.Drawing.Color.Snow
         Me.Links.Location = New System.Drawing.Point(194, 82)
@@ -296,8 +303,8 @@ Partial Class Form
         '
         'Volume
         '
-        Me.Volume.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.Volume.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Volume.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Volume.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Volume.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Volume.ForeColor = System.Drawing.Color.Snow
         Me.Volume.Location = New System.Drawing.Point(288, 82)
@@ -310,8 +317,8 @@ Partial Class Form
         '
         'PatchTCBtn
         '
-        Me.PatchTCBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.PatchTCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.PatchTCBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.PatchTCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PatchTCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PatchTCBtn.ForeColor = System.Drawing.Color.Snow
         Me.PatchTCBtn.Location = New System.Drawing.Point(288, 112)
@@ -325,8 +332,8 @@ Partial Class Form
         '
         'PowerShell
         '
-        Me.PowerShell.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.PowerShell.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.PowerShell.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.PowerShell.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PowerShell.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PowerShell.ForeColor = System.Drawing.Color.Snow
         Me.PowerShell.Location = New System.Drawing.Point(100, 52)
@@ -339,8 +346,8 @@ Partial Class Form
         '
         'BlackBtn
         '
-        Me.BlackBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.BlackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.BlackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.BlackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.BlackBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BlackBtn.ForeColor = System.Drawing.Color.Snow
         Me.BlackBtn.Location = New System.Drawing.Point(194, 112)
@@ -379,8 +386,8 @@ Partial Class Form
         '
         'LSDbtn
         '
-        Me.LSDbtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.LSDbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LSDbtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.LSDbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LSDbtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LSDbtn.ForeColor = System.Drawing.Color.Snow
         Me.LSDbtn.Location = New System.Drawing.Point(6, 112)
@@ -393,8 +400,8 @@ Partial Class Form
         '
         'MapPublicLehrer
         '
-        Me.MapPublicLehrer.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.MapPublicLehrer.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MapPublicLehrer.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.MapPublicLehrer.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MapPublicLehrer.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MapPublicLehrer.ForeColor = System.Drawing.Color.Snow
         Me.MapPublicLehrer.Location = New System.Drawing.Point(6, 22)
@@ -407,8 +414,8 @@ Partial Class Form
         '
         'MapPrivatHome
         '
-        Me.MapPrivatHome.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.MapPrivatHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.MapPrivatHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.MapPrivatHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MapPrivatHome.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MapPrivatHome.ForeColor = System.Drawing.Color.Snow
         Me.MapPrivatHome.Location = New System.Drawing.Point(6, 52)
@@ -421,8 +428,8 @@ Partial Class Form
         '
         'More
         '
-        Me.More.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.More.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.More.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.More.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.More.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.More.ForeColor = System.Drawing.Color.Snow
         Me.More.Location = New System.Drawing.Point(6, 142)
@@ -435,8 +442,8 @@ Partial Class Form
         '
         'FindBtn
         '
-        Me.FindBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.FindBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.FindBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.FindBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.FindBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FindBtn.ForeColor = System.Drawing.Color.Snow
         Me.FindBtn.Location = New System.Drawing.Point(6, 112)
@@ -449,8 +456,8 @@ Partial Class Form
         '
         'CMD
         '
-        Me.CMD.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.CMD.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CMD.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.CMD.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.CMD.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CMD.ForeColor = System.Drawing.Color.Snow
         Me.CMD.Location = New System.Drawing.Point(100, 112)
@@ -480,8 +487,8 @@ Partial Class Form
         '
         'RecentBtn
         '
-        Me.RecentBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.RecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.RecentBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.RecentBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.RecentBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RecentBtn.ForeColor = System.Drawing.Color.Snow
         Me.RecentBtn.Location = New System.Drawing.Point(288, 22)
@@ -494,8 +501,8 @@ Partial Class Form
         '
         'HideBtn
         '
-        Me.HideBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.HideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.HideBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.HideBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.HideBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HideBtn.ForeColor = System.Drawing.Color.Snow
         Me.HideBtn.Location = New System.Drawing.Point(6, 142)
@@ -508,8 +515,8 @@ Partial Class Form
         '
         'ShowBtn
         '
-        Me.ShowBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.ShowBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ShowBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.ShowBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ShowBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ShowBtn.ForeColor = System.Drawing.Color.Snow
         Me.ShowBtn.Location = New System.Drawing.Point(100, 142)
@@ -522,8 +529,8 @@ Partial Class Form
         '
         'LockBtn
         '
-        Me.LockBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.LockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LockBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.LockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LockBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LockBtn.ForeColor = System.Drawing.Color.Snow
         Me.LockBtn.Location = New System.Drawing.Point(194, 142)
@@ -536,8 +543,8 @@ Partial Class Form
         '
         'UnlockBtn
         '
-        Me.UnlockBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.UnlockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.UnlockBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.UnlockBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.UnlockBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UnlockBtn.ForeColor = System.Drawing.Color.Snow
         Me.UnlockBtn.Location = New System.Drawing.Point(288, 142)
@@ -571,9 +578,9 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.WebLogs)
         Me.GroupBox1.Controls.Add(Me.WebAnwendung)
         Me.GroupBox1.Controls.Add(Me.Shortcut)
-        Me.GroupBox1.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox1.Location = New System.Drawing.Point(6, 7)
+        Me.GroupBox1.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GroupBox1.Location = New System.Drawing.Point(11, 6)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(383, 173)
         Me.GroupBox1.TabIndex = 1
@@ -594,9 +601,9 @@ Partial Class Form
         Me.GroupBox3.Controls.Add(Me.RoomBox)
         Me.GroupBox3.Controls.Add(Me.Spoof)
         Me.GroupBox3.Controls.Add(Me.NameBox)
-        Me.GroupBox3.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 182)
+        Me.GroupBox3.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 185)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(288, 105)
         Me.GroupBox3.TabIndex = 3
@@ -622,9 +629,9 @@ Partial Class Form
         Me.GroupBox2.Controls.Add(Me.More)
         Me.GroupBox2.Controls.Add(Me.MapCustom)
         Me.GroupBox2.Controls.Add(Me.MapPrivatHome)
-        Me.GroupBox2.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox2.Location = New System.Drawing.Point(395, 7)
+        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GroupBox2.Location = New System.Drawing.Point(400, 6)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(101, 173)
         Me.GroupBox2.TabIndex = 2
@@ -638,9 +645,9 @@ Partial Class Form
         Me.GroupBox4.Controls.Add(Me.UnlockPCBtn)
         Me.GroupBox4.Controls.Add(Me.ShutdownPCBtn)
         Me.GroupBox4.Controls.Add(Me.LockPCBtn)
-        Me.GroupBox4.Font = New System.Drawing.Font("Impact", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.ForeColor = System.Drawing.Color.Teal
-        Me.GroupBox4.Location = New System.Drawing.Point(306, 186)
+        Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.GroupBox4.Location = New System.Drawing.Point(306, 189)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(195, 81)
         Me.GroupBox4.TabIndex = 4
@@ -649,8 +656,8 @@ Partial Class Form
         '
         'UnlockPCBtn
         '
-        Me.UnlockPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.UnlockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.UnlockPCBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.UnlockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.UnlockPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.UnlockPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.UnlockPCBtn.Location = New System.Drawing.Point(100, 22)
@@ -662,8 +669,8 @@ Partial Class Form
         '
         'ShutdownPCBtn
         '
-        Me.ShutdownPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.ShutdownPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ShutdownPCBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.ShutdownPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ShutdownPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ShutdownPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.ShutdownPCBtn.Location = New System.Drawing.Point(6, 52)
@@ -675,8 +682,8 @@ Partial Class Form
         '
         'LockPCBtn
         '
-        Me.LockPCBtn.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.LockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.LockPCBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.LockPCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LockPCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LockPCBtn.ForeColor = System.Drawing.Color.Snow
         Me.LockPCBtn.Location = New System.Drawing.Point(6, 22)
@@ -686,19 +693,79 @@ Partial Class Form
         Me.LockPCBtn.Text = "LockAll"
         Me.LockPCBtn.UseVisualStyleBackColor = False
         '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Title)
+        Me.Panel1.Controls.Add(Me.MinimizeBtn)
+        Me.Panel1.Controls.Add(Me.CloseBtn)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(512, 27)
+        Me.Panel1.TabIndex = 5
+        '
+        'CloseBtn
+        '
+        Me.CloseBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(71, Byte), Integer), CType(CType(87, Byte), Integer))
+        Me.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.CloseBtn.FlatAppearance.BorderSize = 0
+        Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CloseBtn.Location = New System.Drawing.Point(462, 0)
+        Me.CloseBtn.Name = "CloseBtn"
+        Me.CloseBtn.Size = New System.Drawing.Size(50, 27)
+        Me.CloseBtn.TabIndex = 0
+        Me.CloseBtn.TabStop = False
+        Me.CloseBtn.Text = "x"
+        Me.CloseBtn.UseVisualStyleBackColor = False
+        '
+        'MinimizeBtn
+        '
+        Me.MinimizeBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(165, Byte), Integer), CType(CType(2, Byte), Integer))
+        Me.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right
+        Me.MinimizeBtn.FlatAppearance.BorderSize = 0
+        Me.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.MinimizeBtn.Location = New System.Drawing.Point(412, 0)
+        Me.MinimizeBtn.Name = "MinimizeBtn"
+        Me.MinimizeBtn.Size = New System.Drawing.Size(50, 27)
+        Me.MinimizeBtn.TabIndex = 1
+        Me.MinimizeBtn.TabStop = False
+        Me.MinimizeBtn.Text = "-"
+        Me.MinimizeBtn.UseVisualStyleBackColor = False
+        '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.GroupBox2)
+        Me.Panel3.Controls.Add(Me.GroupBox1)
+        Me.Panel3.Controls.Add(Me.GroupBox3)
+        Me.Panel3.Controls.Add(Me.GroupBox4)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 27)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(512, 300)
+        Me.Panel3.TabIndex = 7
+        '
+        'Title
+        '
+        Me.Title.AutoSize = True
+        Me.Title.BackColor = System.Drawing.Color.FromArgb(CType(CType(47, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(66, Byte), Integer))
+        Me.Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Title.Location = New System.Drawing.Point(3, 6)
+        Me.Title.Name = "Title"
+        Me.Title.Size = New System.Drawing.Size(156, 15)
+        Me.Title.TabIndex = 2
+        Me.Title.Text = "MNS+ Trasher @BOS 2020"
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.MainBackground
-        Me.ClientSize = New System.Drawing.Size(502, 291)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(164, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(190, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(512, 327)
         Me.ControlBox = False
-        Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox2)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox1)
-        Me.Cursor = System.Windows.Forms.Cursors.Cross
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel1)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Transparent
@@ -707,12 +774,16 @@ Partial Class Form
         Me.MaximizeBox = False
         Me.Name = "Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Tag = " "
         Me.TransparencyKey = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -759,4 +830,9 @@ Partial Class Form
     Friend WithEvents UnlockPCBtn As Button
     Friend WithEvents ShutdownPCBtn As Button
     Friend WithEvents LockPCBtn As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents MinimizeBtn As Button
+    Friend WithEvents CloseBtn As Button
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Title As Label
 End Class
