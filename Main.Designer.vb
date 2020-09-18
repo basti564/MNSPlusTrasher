@@ -26,16 +26,12 @@ Partial Class Form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form))
         Me.lefty = New System.Windows.Forms.CheckBox()
         Me.msgBtn = New System.Windows.Forms.Button()
-        Me.Spoof = New System.Windows.Forms.Button()
-        Me.RoomBox = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.WebAnwendung = New System.Windows.Forms.Button()
         Me.Support = New System.Windows.Forms.Button()
-        Me.RoomTxt = New System.Windows.Forms.Label()
         Me.Shortcut = New System.Windows.Forms.Button()
         Me.WebLogs = New System.Windows.Forms.Button()
         Me.Wall = New System.Windows.Forms.Button()
-        Me.MapCustom = New System.Windows.Forms.Button()
         Me.TrayIcon = New System.Windows.Forms.Button()
         Me.ProcessesBtn = New System.Windows.Forms.Button()
         Me.Links = New System.Windows.Forms.Button()
@@ -46,7 +42,6 @@ Partial Class Form
         Me.txtIP = New System.Windows.Forms.TextBox()
         Me.btnIP = New System.Windows.Forms.Button()
         Me.LSDbtn = New System.Windows.Forms.Button()
-        Me.FindBtn = New System.Windows.Forms.Button()
         Me.CMD = New System.Windows.Forms.Button()
         Me.Silent = New System.Windows.Forms.CheckBox()
         Me.RecentBtn = New System.Windows.Forms.Button()
@@ -57,7 +52,6 @@ Partial Class Form
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.LstIP = New System.Windows.Forms.ListBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.UnlockPCBtn = New System.Windows.Forms.Button()
         Me.ShutdownPCBtn = New System.Windows.Forms.Button()
@@ -69,12 +63,11 @@ Partial Class Form
         Me.MainPanel = New System.Windows.Forms.Panel()
         Me.Sidebar = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SilentLbl = New System.Windows.Forms.Label()
         Me.SharesBtn = New System.Windows.Forms.Button()
         Me.DashboardBtn = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
         Me.TitleBar.SuspendLayout()
         Me.MainPanel.SuspendLayout()
@@ -89,7 +82,7 @@ Partial Class Form
         Me.lefty.BackColor = System.Drawing.Color.Transparent
         Me.lefty.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lefty.ForeColor = System.Drawing.Color.Black
-        Me.lefty.Location = New System.Drawing.Point(103, 21)
+        Me.lefty.Location = New System.Drawing.Point(6, 22)
         Me.lefty.Name = "lefty"
         Me.lefty.Size = New System.Drawing.Size(54, 19)
         Me.lefty.TabIndex = 1
@@ -110,32 +103,6 @@ Partial Class Form
         Me.msgBtn.Text = "AWBMsg"
         Me.ToolTip1.SetToolTip(Me.msgBtn, "Send Spoofed Messages To The AWB (Requires Permissions To Write To T:\Admin)")
         Me.msgBtn.UseVisualStyleBackColor = False
-        '
-        'Spoof
-        '
-        Me.Spoof.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Spoof.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.Spoof.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Spoof.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Spoof.ForeColor = System.Drawing.Color.Black
-        Me.Spoof.Location = New System.Drawing.Point(9, 76)
-        Me.Spoof.Name = "Spoof"
-        Me.Spoof.Size = New System.Drawing.Size(87, 24)
-        Me.Spoof.TabIndex = 7
-        Me.Spoof.Text = "SpoofRoom"
-        Me.ToolTip1.SetToolTip(Me.Spoof, "Spoof Room Shares (A:)")
-        Me.Spoof.UseVisualStyleBackColor = False
-        '
-        'RoomBox
-        '
-        Me.RoomBox.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.RoomBox.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoomBox.Location = New System.Drawing.Point(9, 46)
-        Me.RoomBox.Name = "RoomBox"
-        Me.RoomBox.Size = New System.Drawing.Size(88, 23)
-        Me.RoomBox.TabIndex = 6
-        Me.RoomBox.Text = "R-CO1"
-        Me.ToolTip1.SetToolTip(Me.RoomBox, "Room To Be Spoofed")
         '
         'WebAnwendung
         '
@@ -164,20 +131,6 @@ Partial Class Form
         Me.Support.Text = "Support"
         Me.ToolTip1.SetToolTip(Me.Support, "Opens MNS+ Support (Default Password PLZ)")
         Me.Support.UseVisualStyleBackColor = False
-        '
-        'RoomTxt
-        '
-        Me.RoomTxt.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.RoomTxt.AutoSize = True
-        Me.RoomTxt.BackColor = System.Drawing.Color.Transparent
-        Me.RoomTxt.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RoomTxt.ForeColor = System.Drawing.Color.Black
-        Me.RoomTxt.Location = New System.Drawing.Point(6, 22)
-        Me.RoomTxt.Name = "RoomTxt"
-        Me.RoomTxt.Size = New System.Drawing.Size(43, 15)
-        Me.RoomTxt.TabIndex = 5
-        Me.RoomTxt.Text = "Room:"
-        Me.ToolTip1.SetToolTip(Me.RoomTxt, "Your /Un/ Spoofed Room (AD Link Broken)")
         '
         'Shortcut
         '
@@ -220,20 +173,6 @@ Partial Class Form
         Me.Wall.Text = "Wallpaper"
         Me.ToolTip1.SetToolTip(Me.Wall, "Change The Wallpaper")
         Me.Wall.UseVisualStyleBackColor = False
-        '
-        'MapCustom
-        '
-        Me.MapCustom.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
-        Me.MapCustom.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MapCustom.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MapCustom.ForeColor = System.Drawing.Color.Snow
-        Me.MapCustom.Location = New System.Drawing.Point(6, 22)
-        Me.MapCustom.Name = "MapCustom"
-        Me.MapCustom.Size = New System.Drawing.Size(87, 24)
-        Me.MapCustom.TabIndex = 3
-        Me.MapCustom.Text = "CustomDrive"
-        Me.ToolTip1.SetToolTip(Me.MapCustom, "Map / UnMap Custom Network Drive")
-        Me.MapCustom.UseVisualStyleBackColor = False
         '
         'TrayIcon
         '
@@ -297,7 +236,7 @@ Partial Class Form
         Me.PatchTCBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.PatchTCBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PatchTCBtn.ForeColor = System.Drawing.Color.Snow
-        Me.PatchTCBtn.Location = New System.Drawing.Point(288, 112)
+        Me.PatchTCBtn.Location = New System.Drawing.Point(194, 112)
         Me.PatchTCBtn.Name = "PatchTCBtn"
         Me.PatchTCBtn.Size = New System.Drawing.Size(87, 24)
         Me.PatchTCBtn.TabIndex = 16
@@ -322,15 +261,20 @@ Partial Class Form
         '
         'BlackBtn
         '
-        Me.BlackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.BlackBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(111, Byte), Integer))
+        Me.BlackBtn.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.BlackBtn.FlatAppearance.BorderSize = 0
         Me.BlackBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BlackBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BlackBtn.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BlackBtn.ForeColor = System.Drawing.Color.Snow
-        Me.BlackBtn.Location = New System.Drawing.Point(194, 112)
+        Me.BlackBtn.Image = CType(resources.GetObject("BlackBtn.Image"), System.Drawing.Image)
+        Me.BlackBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.BlackBtn.Location = New System.Drawing.Point(0, 265)
         Me.BlackBtn.Name = "BlackBtn"
-        Me.BlackBtn.Size = New System.Drawing.Size(87, 24)
+        Me.BlackBtn.Size = New System.Drawing.Size(108, 36)
         Me.BlackBtn.TabIndex = 15
-        Me.BlackBtn.Text = "Blackout"
+        Me.BlackBtn.Text = " Blackout"
+        Me.BlackBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.ToolTip1.SetToolTip(Me.BlackBtn, "Blackout Screen On TeacherConsole")
         Me.BlackBtn.UseVisualStyleBackColor = False
         '
@@ -338,7 +282,7 @@ Partial Class Form
         '
         Me.txtIP.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtIP.Font = New System.Drawing.Font("Constantia", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtIP.Location = New System.Drawing.Point(103, 76)
+        Me.txtIP.Location = New System.Drawing.Point(6, 77)
         Me.txtIP.Name = "txtIP"
         Me.txtIP.Size = New System.Drawing.Size(42, 23)
         Me.txtIP.TabIndex = 8
@@ -352,7 +296,7 @@ Partial Class Form
         Me.btnIP.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnIP.Font = New System.Drawing.Font("Constantia", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnIP.ForeColor = System.Drawing.Color.Black
-        Me.btnIP.Location = New System.Drawing.Point(147, 76)
+        Me.btnIP.Location = New System.Drawing.Point(50, 77)
         Me.btnIP.Name = "btnIP"
         Me.btnIP.Size = New System.Drawing.Size(40, 24)
         Me.btnIP.TabIndex = 9
@@ -373,20 +317,6 @@ Partial Class Form
         Me.LSDbtn.Text = "LSD"
         Me.ToolTip1.SetToolTip(Me.LSDbtn, "Overlay Color Changing Form")
         Me.LSDbtn.UseVisualStyleBackColor = False
-        '
-        'FindBtn
-        '
-        Me.FindBtn.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
-        Me.FindBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.FindBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FindBtn.ForeColor = System.Drawing.Color.Snow
-        Me.FindBtn.Location = New System.Drawing.Point(6, 52)
-        Me.FindBtn.Name = "FindBtn"
-        Me.FindBtn.Size = New System.Drawing.Size(87, 24)
-        Me.FindBtn.TabIndex = 4
-        Me.FindBtn.Text = "Find"
-        Me.ToolTip1.SetToolTip(Me.FindBtn, "Find /Hidden/ Shares")
-        Me.FindBtn.UseVisualStyleBackColor = False
         '
         'CMD
         '
@@ -496,7 +426,6 @@ Partial Class Form
         Me.GroupBox1.Controls.Add(Me.ShowBtn)
         Me.GroupBox1.Controls.Add(Me.RecentBtn)
         Me.GroupBox1.Controls.Add(Me.CMD)
-        Me.GroupBox1.Controls.Add(Me.BlackBtn)
         Me.GroupBox1.Controls.Add(Me.LSDbtn)
         Me.GroupBox1.Controls.Add(Me.PatchTCBtn)
         Me.GroupBox1.Controls.Add(Me.PowerShell)
@@ -526,15 +455,12 @@ Partial Class Form
         Me.GroupBox3.Controls.Add(Me.LstIP)
         Me.GroupBox3.Controls.Add(Me.btnIP)
         Me.GroupBox3.Controls.Add(Me.txtIP)
-        Me.GroupBox3.Controls.Add(Me.RoomTxt)
         Me.GroupBox3.Controls.Add(Me.lefty)
-        Me.GroupBox3.Controls.Add(Me.RoomBox)
-        Me.GroupBox3.Controls.Add(Me.Spoof)
         Me.GroupBox3.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.GroupBox3.Location = New System.Drawing.Point(115, 186)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(197, 106)
+        Me.GroupBox3.Size = New System.Drawing.Size(101, 106)
         Me.GroupBox3.TabIndex = 3
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Settings"
@@ -546,25 +472,10 @@ Partial Class Form
         Me.LstIP.FormattingEnabled = True
         Me.LstIP.ItemHeight = 15
         Me.LstIP.Items.AddRange(New Object() {"IP"})
-        Me.LstIP.Location = New System.Drawing.Point(102, 47)
+        Me.LstIP.Location = New System.Drawing.Point(5, 48)
         Me.LstIP.Name = "LstIP"
         Me.LstIP.Size = New System.Drawing.Size(84, 19)
         Me.LstIP.TabIndex = 10
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
-        Me.GroupBox2.Controls.Add(Me.FindBtn)
-        Me.GroupBox2.Controls.Add(Me.MapCustom)
-        Me.GroupBox2.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox2.Location = New System.Drawing.Point(429, 186)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(101, 85)
-        Me.GroupBox2.TabIndex = 2
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Shares"
         '
         'GroupBox4
         '
@@ -575,7 +486,7 @@ Partial Class Form
         Me.GroupBox4.Controls.Add(Me.LockPCBtn)
         Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox4.Location = New System.Drawing.Point(318, 186)
+        Me.GroupBox4.Location = New System.Drawing.Point(222, 185)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(105, 112)
         Me.GroupBox4.TabIndex = 4
@@ -630,7 +541,7 @@ Partial Class Form
         Me.TitleBar.Dock = System.Windows.Forms.DockStyle.Top
         Me.TitleBar.Location = New System.Drawing.Point(0, 0)
         Me.TitleBar.Name = "TitleBar"
-        Me.TitleBar.Size = New System.Drawing.Size(539, 27)
+        Me.TitleBar.Size = New System.Drawing.Size(506, 27)
         Me.TitleBar.TabIndex = 5
         '
         'Title
@@ -650,7 +561,7 @@ Partial Class Form
         Me.MinimizeBtn.Dock = System.Windows.Forms.DockStyle.Right
         Me.MinimizeBtn.FlatAppearance.BorderSize = 0
         Me.MinimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MinimizeBtn.Location = New System.Drawing.Point(439, 0)
+        Me.MinimizeBtn.Location = New System.Drawing.Point(406, 0)
         Me.MinimizeBtn.Name = "MinimizeBtn"
         Me.MinimizeBtn.Size = New System.Drawing.Size(50, 27)
         Me.MinimizeBtn.TabIndex = 1
@@ -664,7 +575,7 @@ Partial Class Form
         Me.CloseBtn.Dock = System.Windows.Forms.DockStyle.Right
         Me.CloseBtn.FlatAppearance.BorderSize = 0
         Me.CloseBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CloseBtn.Location = New System.Drawing.Point(489, 0)
+        Me.CloseBtn.Location = New System.Drawing.Point(456, 0)
         Me.CloseBtn.Name = "CloseBtn"
         Me.CloseBtn.Size = New System.Drawing.Size(50, 27)
         Me.CloseBtn.TabIndex = 0
@@ -674,14 +585,13 @@ Partial Class Form
         '
         'MainPanel
         '
-        Me.MainPanel.Controls.Add(Me.GroupBox2)
         Me.MainPanel.Controls.Add(Me.GroupBox1)
         Me.MainPanel.Controls.Add(Me.GroupBox3)
         Me.MainPanel.Controls.Add(Me.GroupBox4)
         Me.MainPanel.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MainPanel.Location = New System.Drawing.Point(0, 27)
         Me.MainPanel.Name = "MainPanel"
-        Me.MainPanel.Size = New System.Drawing.Size(539, 301)
+        Me.MainPanel.Size = New System.Drawing.Size(506, 301)
         Me.MainPanel.TabIndex = 7
         '
         'Sidebar
@@ -690,6 +600,7 @@ Partial Class Form
         Me.Sidebar.Controls.Add(Me.Panel1)
         Me.Sidebar.Controls.Add(Me.SharesBtn)
         Me.Sidebar.Controls.Add(Me.DashboardBtn)
+        Me.Sidebar.Controls.Add(Me.BlackBtn)
         Me.Sidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.Sidebar.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Sidebar.Location = New System.Drawing.Point(0, 27)
@@ -700,22 +611,22 @@ Partial Class Form
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(87, Byte), Integer), CType(CType(96, Byte), Integer), CType(CType(111, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.SilentLbl)
         Me.Panel1.Controls.Add(Me.Silent)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 273)
+        Me.Panel1.Location = New System.Drawing.Point(0, 237)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(108, 28)
         Me.Panel1.TabIndex = 12
         '
-        'Label1
+        'SilentLbl
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 18)
-        Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Silent"
+        Me.SilentLbl.AutoSize = True
+        Me.SilentLbl.Location = New System.Drawing.Point(30, 5)
+        Me.SilentLbl.Name = "SilentLbl"
+        Me.SilentLbl.Size = New System.Drawing.Size(45, 18)
+        Me.SilentLbl.TabIndex = 12
+        Me.SilentLbl.Text = "Silent"
         '
         'SharesBtn
         '
@@ -754,7 +665,7 @@ Partial Class Form
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(164, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(190, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(539, 328)
+        Me.ClientSize = New System.Drawing.Size(506, 328)
         Me.ControlBox = False
         Me.Controls.Add(Me.Sidebar)
         Me.Controls.Add(Me.MainPanel)
@@ -773,7 +684,6 @@ Partial Class Form
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)
         Me.TitleBar.ResumeLayout(False)
         Me.TitleBar.PerformLayout()
@@ -786,16 +696,12 @@ Partial Class Form
     End Sub
     Friend WithEvents lefty As CheckBox
     Friend WithEvents msgBtn As Button
-    Friend WithEvents Spoof As Button
-    Friend WithEvents RoomBox As TextBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents WebAnwendung As Button
     Friend WithEvents Support As Button
-    Friend WithEvents RoomTxt As Label
     Friend WithEvents Shortcut As Button
     Friend WithEvents WebLogs As Button
     Friend WithEvents Wall As Button
-    Friend WithEvents MapCustom As Button
     Friend WithEvents TrayIcon As Button
     Friend WithEvents ProcessesBtn As Button
     Friend WithEvents GroupBox1 As GroupBox
@@ -809,8 +715,6 @@ Partial Class Form
     Friend WithEvents txtIP As TextBox
     Friend WithEvents LstIP As ListBox
     Friend WithEvents LSDbtn As Button
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents FindBtn As Button
     Friend WithEvents CMD As Button
     Friend WithEvents Silent As CheckBox
     Friend WithEvents RecentBtn As Button
@@ -831,5 +735,5 @@ Partial Class Form
     Friend WithEvents Sidebar As Panel
     Private WithEvents SharesBtn As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents SilentLbl As Label
 End Class

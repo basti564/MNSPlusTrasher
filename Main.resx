@@ -121,6 +121,19 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BlackBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJ
+        TUUH5AkSExga1xhyWwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEfSURBVDhP
+        jdIxSEJRFIfxtzmFEIVI2Si5KLjmIrQ5ODW0JVJ7i4Pg6iIKTm2OrU1BRSC1tAURBKJDNGi12FAEgdy+
+        8+4J7N2Xrw9+oJ3/k8K8sIwxSzjDG/ZQQ0nPi2PYxC4qkA7Rwy3SOguPQRnSFzbxgBPEkUcb2zp343gF
+        aYwNfPrv7Ac+oopVnbtx/ID0gnXc+++MGULed/CsczeOA/x0gax9aa5Rsi/NVOduHGM4wKssaRkzyLeR
+        wh0ude7GcQt1rKGLJN4hyW8kf0Ze5+ExOMUT5Pvfx3xHOvs7Rhm7DS2ns8UxHNn9ryZ6jo5xATsBRT1H
+        x7gB+aea19JzdIyPEexcz9ExXsGN/5hNXif0/L94oO8/auvrjwN53jf3ysOY+t86ZAAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="SharesBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

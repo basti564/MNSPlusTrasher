@@ -63,7 +63,7 @@ Public Class Form
         Me.TopMost = True
         If (Process.GetCurrentProcess().ProcessName = "TeacherConsole") Then
             Black.Show()
-            Me.Text = Me.Text + " [Blackout]"
+            Title.Text = Title.Text + " [Blackout]"
         Else
             If Not Debugger.IsAttached Then
                 On Error Resume Next
@@ -112,19 +112,6 @@ Public Class Form
         MSG.Show()
     End Sub
 
-    Private Sub Spoof_Click(sender As Object, e As EventArgs) Handles Spoof.Click
-        Try
-            If objFSO.FolderExists("A:") Then
-                objnet.RemoveNetworkDrive("A:")
-                Threading.Thread.Sleep(500)
-            End If
-            objnet.MapNetworkDrive("A:", Fileserver & RoomBox.Text & "$", False)
-            RoomTxt.Text = "Room: " & RoomBox.Text
-        Catch ex As Exception
-            MsgBox(ex.Message, 16, "ERROR!")
-        End Try
-    End Sub
-
     Sub MNSLink(sTURL, linklabel)
 
         Dim MNSShortcut, DesktopPath
@@ -167,10 +154,6 @@ Public Class Form
 
     Private Sub Wall_Click(sender As Object, e As EventArgs) Handles Wall.Click
         WallpaperChanger.Show()
-    End Sub
-
-    Private Sub MapCustom_Click(sender As Object, e As EventArgs) Handles MapCustom.Click
-        CustomDrive.Show()
     End Sub
 
     Private Sub TrayIcon_Click(sender As Object, e As EventArgs) Handles TrayIcon.Click
@@ -267,23 +250,6 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
         Else
             objnet.MapNetworkDrive("H:", PrivatHome, False)
         End If
-    End Sub
-
-    Private Sub FindBtn_Click(sender As Object, e As EventArgs) Handles FindBtn.Click
-        If objFSO.FileExists("MNSPF.txt") Then
-            On Error Resume Next
-            objFSO.DeleteFile("MNSPF.txt")
-        End If
-        If objFSO.FileExists("MNSPDC.txt") Then
-            On Error Resume Next
-            objFSO.DeleteFile("MNSPDC.txt")
-        End If
-        On Error Resume Next
-        Process.Start("cmd.exe", "/c net view \\MNSPlusFile\ /all > MNSPF.txt 2>&1")
-        Process.Start("cmd.exe", "/c net view \\MNSPlusDC\ /all > MNSPDC.txt 2>&1")
-        Threading.Thread.Sleep(10000)
-        Process.Start("MNSPF.txt")
-        Process.Start("MNSPDC.txt")
     End Sub
 
     Private Sub CMD_Click(sender As Object, e As EventArgs) Handles CMD.Click
@@ -477,5 +443,18 @@ Do You Want To Proceed?", 48 + 1, "Warning!") = MsgBoxResult.Ok Then
             .BringToFront()
             .Show()
         End With
+    End Sub
+
+    Private Sub SilentLbl_Click(sender As Object, e As EventArgs) Handles SilentLbl.Click
+        If Silent.Checked Then
+            Silent.Checked = False
+        Else
+            Silent.Checked = True
+            Silent.Select()
+        End If
+    End Sub
+
+    Private Sub MainPanel_Paint(sender As Object, e As PaintEventArgs) Handles MainPanel.Paint
+
     End Sub
 End Class
