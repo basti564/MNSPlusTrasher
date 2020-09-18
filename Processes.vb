@@ -9,7 +9,7 @@
 
     Private Sub Eradicate_Click(sender As Object, e As EventArgs) Handles Eradicate.Click
         On Error Resume Next
-        Dim myProcess As Process = System.Diagnostics.Process.GetProcessById(Selection.Substring(0, Selection.IndexOf(" ")))
+        Dim myProcess As Process = System.Diagnostics.Process.GetProcessById(Val("&H" & Selection.Substring(0, Selection.IndexOf(" "))))
         myProcess.Kill()
         Call Reset()
     End Sub
