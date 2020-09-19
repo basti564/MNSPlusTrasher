@@ -23,7 +23,6 @@ Partial Class Shares
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Shares))
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MapNetProg = New System.Windows.Forms.Button()
         Me.MapAWBShare = New System.Windows.Forms.Button()
@@ -46,9 +45,9 @@ Partial Class Shares
         Me.HideBtn = New System.Windows.Forms.Button()
         Me.ShowBtn = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.NetworkDrive = New System.Windows.Forms.Label()
-        Me.SpoofRoom = New System.Windows.Forms.Label()
         Me.AdminOnly = New System.Windows.Forms.Label()
+        Me.SpoofRoom = New System.Windows.Forms.Label()
+        Me.NetworkDrive = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -347,17 +346,17 @@ Partial Class Shares
         Me.Panel1.Size = New System.Drawing.Size(400, 300)
         Me.Panel1.TabIndex = 0
         '
-        'NetworkDrive
+        'AdminOnly
         '
-        Me.NetworkDrive.AutoSize = True
-        Me.NetworkDrive.BackColor = System.Drawing.Color.Transparent
-        Me.NetworkDrive.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NetworkDrive.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.NetworkDrive.Location = New System.Drawing.Point(12, 9)
-        Me.NetworkDrive.Name = "NetworkDrive"
-        Me.NetworkDrive.Size = New System.Drawing.Size(103, 18)
-        Me.NetworkDrive.TabIndex = 55
-        Me.NetworkDrive.Text = "Network Drive"
+        Me.AdminOnly.AutoSize = True
+        Me.AdminOnly.BackColor = System.Drawing.Color.Transparent
+        Me.AdminOnly.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AdminOnly.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(104, Byte), Integer))
+        Me.AdminOnly.Location = New System.Drawing.Point(93, 163)
+        Me.AdminOnly.Name = "AdminOnly"
+        Me.AdminOnly.Size = New System.Drawing.Size(223, 18)
+        Me.AdminOnly.TabIndex = 64
+        Me.AdminOnly.Text = "Teacher/AWB/Server Only Sorry!"
         '
         'SpoofRoom
         '
@@ -371,17 +370,17 @@ Partial Class Shares
         Me.SpoofRoom.TabIndex = 63
         Me.SpoofRoom.Text = "Spoof Room"
         '
-        'AdminOnly
+        'NetworkDrive
         '
-        Me.AdminOnly.AutoSize = True
-        Me.AdminOnly.BackColor = System.Drawing.Color.Transparent
-        Me.AdminOnly.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AdminOnly.ForeColor = System.Drawing.Color.FromArgb(CType(CType(236, Byte), Integer), CType(CType(204, Byte), Integer), CType(CType(104, Byte), Integer))
-        Me.AdminOnly.Location = New System.Drawing.Point(93, 163)
-        Me.AdminOnly.Name = "AdminOnly"
-        Me.AdminOnly.Size = New System.Drawing.Size(223, 18)
-        Me.AdminOnly.TabIndex = 64
-        Me.AdminOnly.Text = "Teacher/AWB/Server Only Sorry!"
+        Me.NetworkDrive.AutoSize = True
+        Me.NetworkDrive.BackColor = System.Drawing.Color.Transparent
+        Me.NetworkDrive.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NetworkDrive.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.NetworkDrive.Location = New System.Drawing.Point(12, 9)
+        Me.NetworkDrive.Name = "NetworkDrive"
+        Me.NetworkDrive.Size = New System.Drawing.Size(103, 18)
+        Me.NetworkDrive.TabIndex = 55
+        Me.NetworkDrive.Text = "Network Drive"
         '
         'Shares
         '
@@ -392,9 +391,9 @@ Partial Class Shares
         Me.Controls.Add(Me.Panel1)
         Me.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "Shares"
+        Me.ShowInTaskbar = False
         Me.Text = "Shares"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)

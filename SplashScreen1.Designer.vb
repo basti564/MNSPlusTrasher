@@ -22,7 +22,6 @@ Partial Class SplashScreen1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SplashScreen1))
         Me.ApplicationTitle = New System.Windows.Forms.Label()
         Me.Version = New System.Windows.Forms.Label()
         Me.Copyright = New System.Windows.Forms.Label()
@@ -93,7 +92,6 @@ Partial Class SplashScreen1
         Me.DoubleBuffered = True
         Me.ForeColor = System.Drawing.SystemColors.WindowText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "SplashScreen1"

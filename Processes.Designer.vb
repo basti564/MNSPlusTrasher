@@ -23,7 +23,6 @@ Partial Class Processes
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Processes))
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Eradicate = New System.Windows.Forms.Button()
         Me.Only = New System.Windows.Forms.CheckBox()
@@ -109,9 +108,9 @@ Partial Class Processes
         Me.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "Processes"
+        Me.ShowInTaskbar = False
         Me.Text = " Task Manager"
         Me.ResumeLayout(False)
         Me.PerformLayout()

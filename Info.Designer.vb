@@ -24,6 +24,7 @@ Partial Class Info
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Tools = New System.Windows.Forms.Label()
         Me.GetIP = New System.Windows.Forms.Label()
@@ -41,7 +42,6 @@ Partial Class Info
         Me.btnIP = New System.Windows.Forms.Button()
         Me.txtIP = New System.Windows.Forms.TextBox()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,6 +70,18 @@ Partial Class Info
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(400, 300)
         Me.Panel1.TabIndex = 0
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(152, 105)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(221, 18)
+        Me.Label2.TabIndex = 69
+        Me.Label2.Text = "Permanent Swap Mouse Buttons"
         '
         'Label1
         '
@@ -281,18 +293,6 @@ Partial Class Info
         Me.txtIP.TabIndex = 11
         Me.txtIP.Text = "1-01"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(152, 105)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(221, 18)
-        Me.Label2.TabIndex = 69
-        Me.Label2.Text = "Permanent Swap Mouse Buttons"
-        '
         'Info
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -304,6 +304,7 @@ Partial Class Info
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "Info"
+        Me.ShowInTaskbar = False
         Me.Text = "Info"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)

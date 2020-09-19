@@ -22,7 +22,6 @@ Partial Class Recent
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Recent))
         Me.UserList = New System.Windows.Forms.ListBox()
         Me.NameTxt = New System.Windows.Forms.Label()
         Me.fAccessTxt = New System.Windows.Forms.Label()
@@ -79,8 +78,8 @@ Partial Class Recent
         Me.Controls.Add(Me.UserList)
         Me.DoubleBuffered = True
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Recent"
+        Me.ShowInTaskbar = False
         Me.Text = "Recent Users"
         Me.ResumeLayout(False)
         Me.PerformLayout()
