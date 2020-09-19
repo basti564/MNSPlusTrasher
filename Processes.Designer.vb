@@ -34,15 +34,14 @@ Partial Class Processes
         '
         'Eradicate
         '
-        Me.Eradicate.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Eradicate.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.Eradicate.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Eradicate.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Eradicate.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Eradicate.ForeColor = System.Drawing.Color.Snow
-        Me.Eradicate.Location = New System.Drawing.Point(12, 300)
+        Me.Eradicate.Location = New System.Drawing.Point(0, 309)
         Me.Eradicate.Name = "Eradicate"
-        Me.Eradicate.Size = New System.Drawing.Size(221, 23)
+        Me.Eradicate.Size = New System.Drawing.Size(245, 26)
         Me.Eradicate.TabIndex = 5
         Me.Eradicate.Text = "Eradicate"
         Me.ToolTip1.SetToolTip(Me.Eradicate, "Eradicate Selected Task")
@@ -88,7 +87,7 @@ Partial Class Processes
         Me.ListBox1.Items.AddRange(New Object() {"Placeholder"})
         Me.ListBox1.Location = New System.Drawing.Point(12, 41)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(221, 242)
+        Me.ListBox1.Size = New System.Drawing.Size(221, 256)
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 4
         '
@@ -113,7 +112,7 @@ Partial Class Processes
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "Processes"
-        Me.Text = " "
+        Me.Text = " Task Manager"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

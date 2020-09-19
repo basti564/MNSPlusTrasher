@@ -10,7 +10,7 @@
     Dim Printserver = "\\MNSPlusDC\"
 
     'Shares
-    Dim PrivatHome = Fileserver & user & "$"             'Privat Homeshare (wenn nicht über Profileinstellung gesetzt)                
+    Dim PrivatHome = Fileserver & user & "$"             'Privat Homeshare
     Dim PublicLehrer = Fileserver & user & "Public" & "$"        'Public Homeshare Lehrer
     Dim HomesSchueler = Fileserver & "PrivatSchueler$"           'Alle Privat Homeshares der Schueler
     Dim PublicLehrerSchueler = Fileserver & "PublicLehrer$"      'Alle Public Homeshares der Lehrer
@@ -134,5 +134,71 @@
         Catch ex As Exception
             MsgBox(ex.Message, 16, "ERROR!")
         End Try
+    End Sub
+
+    Private Sub HideBtn_Click(sender As Object, e As EventArgs) Handles HideBtn.Click
+        On Error Resume Next
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        objFolder.Attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+
+        For Each objFile In objFolder.files
+            If Not objFile.Name.StartsWith("MNSPlusTrasher") Then
+                objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            End If
+        Next
+
+        For Each objSFldr In objSubFolders
+            objSFldr.Attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            For Each objFile In objSFldr.files
+                objFile.attributes = IO.FileAttributes.Hidden Or IO.FileAttributes.System
+            Next
+        Next
+    End Sub
+
+    Private Sub ShowBtn_Click(sender As Object, e As EventArgs) Handles ShowBtn.Click
+        On Error Resume Next
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        objFolder.Attributes = IO.FileAttributes.Normal
+
+        For Each objFile In objFolder.files
+            objFile.attributes = IO.FileAttributes.Normal
+        Next
+
+        For Each objSFldr In objSubFolders
+            objSFldr.Attributes = IO.FileAttributes.Normal
+            For Each objFile In objSFldr.files
+                objFile.attributes = IO.FileAttributes.Normal
+            Next
+        Next
+    End Sub
+
+    Private Sub LockBtn_Click(sender As Object, e As EventArgs) Handles LockBtn.Click
+        On Error Resume Next
+        Dim objFolder = objFSO.getFolder(PrivatHome)
+        Dim objSubFolders = objFolder.subFolders
+        Dim i As Integer = 1
+        FileClose()
+
+        For Each objFile In objFolder.files
+            If Not objFile.Name.StartsWith("MNSPlusTrasher") Then
+                FileOpen(i, objFile.Path, OpenMode.Binary)
+                Lock(i)
+                i += 1
+            End If
+        Next
+
+        For Each objSFldr In objSubFolders
+            For Each objFile In objSFldr.files
+                FileOpen(i, objFile.Path, OpenMode.Binary)
+                Lock(i)
+                i += 1
+            Next
+        Next
+    End Sub
+
+    Private Sub UnlockBtn_Click(sender As Object, e As EventArgs) Handles UnlockBtn.Click
+        FileClose()
     End Sub
 End Class
