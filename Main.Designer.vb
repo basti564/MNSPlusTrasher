@@ -204,7 +204,7 @@ Partial Class Form
         Me.GroupBox4.Controls.Add(Me.LockPCBtn)
         Me.GroupBox4.Font = New System.Drawing.Font("Constantia", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(55, Byte), Integer), CType(CType(66, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.GroupBox4.Location = New System.Drawing.Point(281, 36)
+        Me.GroupBox4.Location = New System.Drawing.Point(278, 36)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(119, 116)
         Me.GroupBox4.TabIndex = 7
