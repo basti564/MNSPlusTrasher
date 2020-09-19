@@ -64,7 +64,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>MNSplus.ico</ApplicationIcon>
+    <ApplicationIcon>lsd.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>false</SignManifests>
@@ -248,7 +248,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MNSplus.ico" />
+    <Content Include="lsd.ico" />
     <None Include="Resources\RoomMgr.dll" />
     <Content Include="Resources\MainBackground.png" />
   </ItemGroup>

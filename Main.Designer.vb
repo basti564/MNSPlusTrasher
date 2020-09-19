@@ -33,6 +33,7 @@ Partial Class Form
         Me.CMD = New System.Windows.Forms.Button()
         Me.Silent = New System.Windows.Forms.CheckBox()
         Me.BlackBtn = New System.Windows.Forms.Button()
+        Me.ProcessesBtn = New System.Windows.Forms.Button()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
         Me.UnlockPCBtn = New System.Windows.Forms.Button()
         Me.ShutdownPCBtn = New System.Windows.Forms.Button()
@@ -48,7 +49,6 @@ Partial Class Form
         Me.SilentLbl = New System.Windows.Forms.Label()
         Me.SharesBtn = New System.Windows.Forms.Button()
         Me.DashboardBtn = New System.Windows.Forms.Button()
-        Me.ProcessesBtn = New System.Windows.Forms.Button()
         Me.GroupBox4.SuspendLayout()
         Me.TitleBar.SuspendLayout()
         Me.MainPanel.SuspendLayout()
@@ -180,6 +180,21 @@ Partial Class Form
         Me.BlackBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.ToolTip1.SetToolTip(Me.BlackBtn, "Blackout Screen On TeacherConsole")
         Me.BlackBtn.UseVisualStyleBackColor = False
+        '
+        'ProcessesBtn
+        '
+        Me.ProcessesBtn.BackColor = System.Drawing.Color.Transparent
+        Me.ProcessesBtn.FlatAppearance.BorderSize = 0
+        Me.ProcessesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ProcessesBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ProcessesBtn.ForeColor = System.Drawing.Color.Snow
+        Me.ProcessesBtn.Image = CType(resources.GetObject("ProcessesBtn.Image"), System.Drawing.Image)
+        Me.ProcessesBtn.Location = New System.Drawing.Point(166, 243)
+        Me.ProcessesBtn.Name = "ProcessesBtn"
+        Me.ProcessesBtn.Size = New System.Drawing.Size(45, 45)
+        Me.ProcessesBtn.TabIndex = 6
+        Me.ToolTip1.SetToolTip(Me.ProcessesBtn, "Manipulate Processes")
+        Me.ProcessesBtn.UseVisualStyleBackColor = False
         '
         'GroupBox4
         '
@@ -385,21 +400,6 @@ Partial Class Form
         Me.DashboardBtn.Text = " Dashbord"
         Me.DashboardBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.DashboardBtn.UseVisualStyleBackColor = True
-        '
-        'ProcessesBtn
-        '
-        Me.ProcessesBtn.BackColor = System.Drawing.Color.Transparent
-        Me.ProcessesBtn.FlatAppearance.BorderSize = 0
-        Me.ProcessesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ProcessesBtn.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ProcessesBtn.ForeColor = System.Drawing.Color.Snow
-        Me.ProcessesBtn.Image = CType(resources.GetObject("ProcessesBtn.Image"), System.Drawing.Image)
-        Me.ProcessesBtn.Location = New System.Drawing.Point(166, 243)
-        Me.ProcessesBtn.Name = "ProcessesBtn"
-        Me.ProcessesBtn.Size = New System.Drawing.Size(45, 45)
-        Me.ProcessesBtn.TabIndex = 6
-        Me.ToolTip1.SetToolTip(Me.ProcessesBtn, "Manipulate Processes")
-        Me.ProcessesBtn.UseVisualStyleBackColor = False
         '
         'Form
         '
