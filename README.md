@@ -37,6 +37,11 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Hide and Show all folders & files in the home share
 - Lock and Unlock all files in the home share
 - *Experimental* option which can lock/unlock/shutdown all computers in a room via MNSInterface
+## Icon Credits
+- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+- Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
 ## TODO
 - Add MNSPlusTrasher update checker
 - Add student and computer scraper via [AD](https://de.wikipedia.org/wiki/Active_Directory)
@@ -44,4 +49,5 @@ The explanation of the main exploit used by TeacherConsolePatcher can be found [
 - Add documentation of the project and MNS+
 - Add a way for MNSPlusTrasher to detect the current MNS+ version
 ## Screenshot
-![Main](https://user-images.githubusercontent.com/34898868/73128445-d73b7680-3fcf-11ea-94fc-cb73bfb18b75.PNG)
+![Main](https://user-images.githubusercontent.com/34898868/93655210-7b23d780-fa22-11ea-901b-f8afa6c62496.PNG)
+

@@ -97,16 +97,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomDrive.Designer.vb">
-      <DependentUpon>CustomDrive.vb</DependentUpon>
-    </Compile>
-    <Compile Include="CustomDrive.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Black.Designer.vb">
       <DependentUpon>Black.vb</DependentUpon>
     </Compile>
     <Compile Include="Black.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.vb">
+      <DependentUpon>Info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Info.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LSD.Designer.vb">
@@ -180,11 +180,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CustomDrive.resx">
-      <DependentUpon>CustomDrive.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Black.resx">
       <DependentUpon>Black.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LSD.resx">
       <DependentUpon>LSD.vb</DependentUpon>
@@ -250,7 +250,6 @@
   <ItemGroup>
     <Content Include="MNSplus.ico" />
     <None Include="Resources\RoomMgr.dll" />
-    <None Include="Resources\Links.png" />
     <Content Include="Resources\MainBackground.png" />
   </ItemGroup>
   <ItemGroup>

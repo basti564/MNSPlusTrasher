@@ -39,6 +39,7 @@ Partial Class LSD
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "LSD"
+        Me.ShowInTaskbar = False
         Me.Text = "LSD"
         Me.ResumeLayout(False)
 

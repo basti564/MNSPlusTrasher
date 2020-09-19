@@ -35,11 +35,11 @@ Partial Class WallpaperChanger
         '
         Me.Wallpaper.AutoSize = True
         Me.Wallpaper.BackColor = System.Drawing.Color.Transparent
-        Me.Wallpaper.Font = New System.Drawing.Font("Impact", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Wallpaper.ForeColor = System.Drawing.Color.Teal
+        Me.Wallpaper.Font = New System.Drawing.Font("Constantia", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Wallpaper.ForeColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
         Me.Wallpaper.Location = New System.Drawing.Point(12, 9)
         Me.Wallpaper.Name = "Wallpaper"
-        Me.Wallpaper.Size = New System.Drawing.Size(101, 16)
+        Me.Wallpaper.Size = New System.Drawing.Size(132, 18)
         Me.Wallpaper.TabIndex = 30
         Me.Wallpaper.Text = "Wallpaper Changer"
         '
@@ -47,14 +47,15 @@ Partial Class WallpaperChanger
         '
         Me.TextBoxLocation.Location = New System.Drawing.Point(15, 28)
         Me.TextBoxLocation.Name = "TextBoxLocation"
-        Me.TextBoxLocation.Size = New System.Drawing.Size(182, 20)
+        Me.TextBoxLocation.Size = New System.Drawing.Size(182, 21)
         Me.TextBoxLocation.TabIndex = 29
         Me.ToolTip1.SetToolTip(Me.TextBoxLocation, "Wallpaper Path")
         '
         'btnApply
         '
-        Me.btnApply.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnApply.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnApply.ForeColor = System.Drawing.Color.Snow
         Me.btnApply.Location = New System.Drawing.Point(109, 54)
         Me.btnApply.Name = "btnApply"
         Me.btnApply.Size = New System.Drawing.Size(88, 23)
@@ -65,8 +66,9 @@ Partial Class WallpaperChanger
         '
         'btnbrowse
         '
-        Me.btnbrowse.BackColor = System.Drawing.Color.LightSeaGreen
-        Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnbrowse.BackColor = System.Drawing.Color.FromArgb(CType(CType(83, Byte), Integer), CType(CType(82, Byte), Integer), CType(CType(237, Byte), Integer))
+        Me.btnbrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnbrowse.ForeColor = System.Drawing.Color.Snow
         Me.btnbrowse.Location = New System.Drawing.Point(15, 54)
         Me.btnbrowse.Name = "btnbrowse"
         Me.btnbrowse.Size = New System.Drawing.Size(88, 23)
@@ -79,8 +81,7 @@ Partial Class WallpaperChanger
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.CornflowerBlue
-        Me.BackgroundImage = Global.MNSTrasher.My.Resources.Resources.Links
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(164, Byte), Integer), CType(CType(176, Byte), Integer), CType(CType(190, Byte), Integer))
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(209, 89)
         Me.Controls.Add(Me.Wallpaper)
@@ -88,6 +89,7 @@ Partial Class WallpaperChanger
         Me.Controls.Add(Me.btnApply)
         Me.Controls.Add(Me.btnbrowse)
         Me.DoubleBuffered = True
+        Me.Font = New System.Drawing.Font("Constantia", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False

@@ -32,6 +32,7 @@ Partial Class Black
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Black"
+        Me.ShowInTaskbar = False
         Me.Text = "BlackOut"
         Me.ResumeLayout(False)
 
