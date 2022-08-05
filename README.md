@@ -3,7 +3,7 @@
 [![GitHub license](https://img.shields.io/github/license/basti564/MNSPlusTrasher?style=for-the-badge)](https://github.com/basti564/MNSPlusTrasher/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/basti564/MNSPlusTrasher?style=for-the-badge)](https://github.com/basti564/MNSPlusTrasher/stargazers)
 ### The best and only MNS+ "hacktool" available
-MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is used by most [schools](http://mnsnet.de/db/) in Rhineland-Palatinate, Germany
+MNSPlusTrasher is designed to show flaws in [MNS+](http://mns.bildung-rp.de/) which is used by most [schools](https://mnsplus.bildung-rp.de/schulen/uebersicht/liste-aller-mns-schulen.html) in Rhineland-Palatinate, Germany
 ## Explanation
 The explanation of the main exploit used by TeacherConsolePatcher can be found [here](https://github.com/basti564/mns-patcher) on GitHub
 ## Releases
